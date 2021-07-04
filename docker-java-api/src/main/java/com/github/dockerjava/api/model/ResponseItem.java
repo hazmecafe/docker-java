@@ -46,7 +46,7 @@ public class ResponseItem extends DockerObject implements Serializable {
     private String error;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_22}
+     * @since RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("aux")
     private AuxDetail aux;

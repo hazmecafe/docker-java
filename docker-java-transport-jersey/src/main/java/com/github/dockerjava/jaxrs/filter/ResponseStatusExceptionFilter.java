@@ -23,7 +23,7 @@ import java.io.InputStream;
 import java.nio.charset.Charset;
 
 /**
- * This {@link ClientResponseFilter} implementation detects http status codes and throws {@link DockerException}s
+ * This ClientResponseFilter implementation detects http status codes and throws DockerExceptions
  *
  * @author Marcus Linke
  *

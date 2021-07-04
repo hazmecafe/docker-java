@@ -6,8 +6,8 @@ import lombok.ToString;
 import java.io.Serializable;
 
 /**
- * Represents a network link between two Docker containers. The container with the name {@link #getName()} is made available in the target
- * container with the aliased name {@link #getAlias()}. This involves creating an entry in <code>/etc/hosts</code> and some environment
+ * Represents a network link between two Docker containers. The container with the name #getName() is made available in the target
+ * container with the aliased name #getAlias(). This involves creating an entry in <code>/etc/hosts</code> and some environment
  * variables in the target container as well as creating a network bridge between both containers.
  */
 @EqualsAndHashCode
@@ -20,7 +20,7 @@ public class Link extends DockerObject implements Serializable {
     private final String alias;
 
     /**
-     * Creates a {@link Link} for the container with the given name and an aliased name for use in the target container.
+     * Creates a Link for the container with the given name and an aliased name for use in the target container.
      *
      * @param name
      *            the name of the container that you want to link into the target container
@@ -47,11 +47,11 @@ public class Link extends DockerObject implements Serializable {
     }
 
     /**
-     * Parses a textual link specification (as used by the Docker CLI) to a {@link Link}.
+     * Parses a textual link specification (as used by the Docker CLI) to a Link.
      *
      * @param serialized
      *            the specification, e.g. <code>name:alias</code> or <code>/name1:/name2/alias</code>
-     * @return a {@link Link} matching the specification
+     * @return a Link matching the specification
      * @throws IllegalArgumentException
      *             if the specification cannot be parsed
      */
@@ -74,10 +74,10 @@ public class Link extends DockerObject implements Serializable {
     }
 
     /**
-     * Returns a string representation of this {@link Link} suitable for inclusion in a JSON message. The format is <code>name:alias</code>,
-     * like the argument in {@link #parse(String)}.
+     * Returns a string representation of this Link suitable for inclusion in a JSON message. The format is <code>name:alias</code>,
+     * like the argument in #parse(String).
      *
-     * @return a string representation of this {@link Link}
+     * @return a string representation of this Link
      */
     @Override
     public String toString() {

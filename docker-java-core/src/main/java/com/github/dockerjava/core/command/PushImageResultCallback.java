@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
  *
  * @author Marcus Linke
  *
- * @deprecated use {@link com.github.dockerjava.api.async.ResultCallback.Adapter}
+ * @deprecated use com.github.dockerjava.api.async.ResultCallback.Adapter
  */
 @Deprecated
 public class PushImageResultCallback extends ResultCallbackTemplate<PushImageResultCallback, PushResponseItem> {
@@ -46,7 +46,7 @@ public class PushImageResultCallback extends ResultCallbackTemplate<PushImageRes
     /**
      * Awaits the image to be pulled successful.
      *
-     * @deprecated use {@link #awaitCompletion()} or {@link #awaitCompletion(long, TimeUnit)} instead
+     * @deprecated use #awaitCompletion() or #awaitCompletion(long, TimeUnit) instead
      * @throws DockerClientException
      *             if the push fails.
      */

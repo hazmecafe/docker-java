@@ -188,7 +188,7 @@ public class DockerClientImpl implements Closeable, DockerClient {
 
     /**
      *
-     * @deprecated use {@link #getInstance(DockerClientConfig, DockerHttpClient)}
+     * @deprecated use #getInstance(DockerClientConfig, DockerHttpClient)
      */
     @Deprecated
     public static DockerClientImpl getInstance() {
@@ -197,7 +197,7 @@ public class DockerClientImpl implements Closeable, DockerClient {
 
     /**
      *
-     * @deprecated use {@link #getInstance(DockerClientConfig, DockerHttpClient)}
+     * @deprecated use #getInstance(DockerClientConfig, DockerHttpClient)
      */
     @Deprecated
     public static DockerClientImpl getInstance(DockerClientConfig dockerClientConfig) {
@@ -211,7 +211,7 @@ public class DockerClientImpl implements Closeable, DockerClient {
 
     /**
      *
-     * @deprecated use {@link #getInstance(DockerClientConfig, DockerHttpClient)}
+     * @deprecated use #getInstance(DockerClientConfig, DockerHttpClient)
      */
     @Deprecated
     public static DockerClientImpl getInstance(String serverUrl) {
@@ -228,7 +228,7 @@ public class DockerClientImpl implements Closeable, DockerClient {
 
     /**
      *
-     * @return {@link DockerHttpClient} or null if not set
+     * @return DockerHttpClient or null if not set
      */
     @Nullable
     public DockerHttpClient getHttpClient() {
@@ -240,7 +240,7 @@ public class DockerClientImpl implements Closeable, DockerClient {
     }
 
     /**
-     * @deprecated use {@link #getInstance(DockerClientConfig, DockerHttpClient)}
+     * @deprecated use #getInstance(DockerClientConfig, DockerHttpClient)
      */
     @Deprecated
     public DockerClientImpl withDockerCmdExecFactory(DockerCmdExecFactory dockerCmdExecFactory) {

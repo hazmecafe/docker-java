@@ -8,7 +8,7 @@ import javax.annotation.CheckForNull;
 import java.io.Serializable;
 
 /**
- * Used in {@link Statistics}
+ * Used in Statistics
  *
  * @author Yuting Liu
  */

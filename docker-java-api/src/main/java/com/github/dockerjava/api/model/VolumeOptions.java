@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.Map;
 
 /**
- * @since {@link RemoteApiVersion#VERSION_1_24}
+ * @since RemoteApiVersion#VERSION_1_24
  */
 @EqualsAndHashCode
 @ToString

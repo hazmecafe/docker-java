@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * Represents a bind mounted volume in a Docker container.
  *
  * @see Bind
- * @deprecated since {@link RemoteApiVersion#VERSION_1_20}
+ * @deprecated since RemoteApiVersion#VERSION_1_20
  */
 @Deprecated
 @EqualsAndHashCode
@@ -42,10 +42,10 @@ public class VolumeRW implements Serializable {
     }
 
     /**
-     * Returns a string representation of this {@link VolumeRW} suitable for inclusion in a JSON message. The returned String is simply the
-     * container path, {@link #getPath()}.
+     * Returns a string representation of this VolumeRW suitable for inclusion in a JSON message. The returned String is simply the
+     * container path, #getPath().
      *
-     * @return a string representation of this {@link VolumeRW}
+     * @return a string representation of this VolumeRW
      */
     @Override
     public String toString() {

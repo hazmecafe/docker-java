@@ -7,7 +7,7 @@ import lombok.ToString;
 import java.io.Serializable;
 
 /**
- * Used in {@link Container}
+ * Used in Container
  *
  * @see Container
  * @author Kanstantsin Shautsou

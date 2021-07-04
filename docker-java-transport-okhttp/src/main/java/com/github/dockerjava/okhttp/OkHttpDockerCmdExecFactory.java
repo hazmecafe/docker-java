@@ -9,7 +9,7 @@ import com.github.dockerjava.core.DockerClientImpl;
 import com.github.dockerjava.transport.DockerHttpClient;
 
 /**
- * @deprecated use {@link OkDockerHttpClient} with {@link DockerClientImpl#getInstance(DockerClientConfig, DockerHttpClient)}
+ * @deprecated use OkDockerHttpClient with DockerClientImpl#getInstance(DockerClientConfig, DockerHttpClient)
  */
 @Deprecated
 public class OkHttpDockerCmdExecFactory extends DelegatingDockerCmdExecFactory implements DockerClientConfigAware {

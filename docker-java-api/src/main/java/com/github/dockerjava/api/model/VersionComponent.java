@@ -9,9 +9,9 @@ import java.io.Serializable;
 import java.util.Map;
 
 /**
- * Part of {@link Version}
+ * Part of Version
  *
- * @since {@link RemoteApiVersion#VERSION_1_35}
+ * @since RemoteApiVersion#VERSION_1_35
  * @author Dmitry Tretyakov
  */
 @EqualsAndHashCode

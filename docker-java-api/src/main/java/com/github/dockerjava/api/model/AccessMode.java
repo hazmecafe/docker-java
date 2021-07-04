@@ -11,7 +11,7 @@ public enum AccessMode {
     ro;
 
     /**
-     * The default {@link AccessMode}: {@link #rw}
+     * The default AccessMode: #rw
      */
     public static final AccessMode DEFAULT = rw;
 

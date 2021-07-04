@@ -25,7 +25,7 @@ public interface CopyArchiveFromContainerCmd extends SyncDockerCmd<InputStream> 
     CopyArchiveFromContainerCmd withResource(@Nonnull String resource);
 
     /**
-     * Its the responsibility of the caller to consume and/or close the {@link InputStream} to prevent connection leaks.
+     * Its the responsibility of the caller to consume and/or close the InputStream to prevent connection leaks.
      *
      * @throws NotFoundException
      *             No such container

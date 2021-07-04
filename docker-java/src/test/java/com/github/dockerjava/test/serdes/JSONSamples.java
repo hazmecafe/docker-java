@@ -39,8 +39,8 @@ public class JSONSamples {
     }
 
     /**
-     * Same as {@link JSONTestHelper#testRoundTrip(java.lang.Object, java.lang.Class)}
-     * but via {@link TypeReference}
+     * Same as JSONTestHelper#testRoundTrip(java.lang.Object, java.lang.Class)
+     * but via TypeReference
      */
     public static <TClass> TClass testRoundTrip(TClass item, JavaType type)
             throws IOException, AssertionError {

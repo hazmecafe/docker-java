@@ -6,7 +6,7 @@ import javax.annotation.CheckForNull;
 import javax.annotation.Nonnull;
 
 /**
- * @since {@link RemoteApiVersion#VERSION_1_24}
+ * @since RemoteApiVersion#VERSION_1_24
  */
 public interface UpdateServiceCmd extends SyncDockerCmd<Void> {
     @CheckForNull

@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * List SwarmNodes
  *
- * @since {@link RemoteApiVersion#VERSION_1_24}
+ * @since RemoteApiVersion#VERSION_1_24
  */
 public interface ListSwarmNodesCmd extends SyncDockerCmd<List<SwarmNode>> {
 

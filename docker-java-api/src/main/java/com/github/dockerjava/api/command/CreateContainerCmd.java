@@ -46,7 +46,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -57,7 +57,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withBinds(Bind... binds) {
@@ -68,7 +68,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withBinds(List<Bind> binds) {
@@ -172,7 +172,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -184,7 +184,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
     /**
      * Add link to another container.
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withLinks(Link... links) {
@@ -196,7 +196,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
     /**
      * Add link to another container.
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withLinks(List<Link> links) {
@@ -221,7 +221,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -232,7 +232,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withMemory(Long memory) {
@@ -243,7 +243,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -254,7 +254,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withMemorySwap(Long memorySwap) {
@@ -268,7 +268,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -287,7 +287,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
      * services such as D-bus and is therefore considered insecure.</li>
      * </ul>
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withNetworkMode(String networkMode) {
@@ -298,7 +298,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -308,10 +308,10 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
     }
 
     /**
-     * Add one or more {@link PortBinding}s. This corresponds to the <code>--publish</code> (<code>-p</code>) option of the
+     * Add one or more PortBindings. This corresponds to the <code>--publish</code> (<code>-p</code>) option of the
      * <code>docker run</code> CLI command.
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withPortBindings(PortBinding... portBindings) {
@@ -321,10 +321,10 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
     }
 
     /**
-     * Add one or more {@link PortBinding}s. This corresponds to the <code>--publish</code> (<code>-p</code>) option of the
+     * Add one or more PortBindings. This corresponds to the <code>--publish</code> (<code>-p</code>) option of the
      * <code>docker run</code> CLI command.
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withPortBindings(List<PortBinding> portBindings) {
@@ -333,9 +333,9 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
     }
 
     /**
-     * Add the port bindings that are contained in the given {@link Ports} object.
+     * Add the port bindings that are contained in the given Ports object.
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withPortBindings(Ports portBindings) {
@@ -355,7 +355,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -366,7 +366,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withPrivileged(Boolean privileged) {
@@ -389,7 +389,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -400,7 +400,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withVolumesFrom(VolumesFrom... volumesFrom) {
@@ -411,7 +411,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withVolumesFrom(List<VolumesFrom> volumesFrom) {
@@ -461,7 +461,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -472,7 +472,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withPublishAllPorts(Boolean publishAllPorts) {
@@ -483,7 +483,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @CheckForNull
     @Deprecated
@@ -495,7 +495,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
     /**
      * Add hostnames to /etc/hosts in the container
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withExtraHosts(String... extraHosts) {
@@ -507,7 +507,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
     /**
      * Add hostnames to /etc/hosts in the container
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withExtraHosts(List<String> extraHosts) {
@@ -517,7 +517,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @CheckForNull
     @Deprecated
@@ -528,9 +528,9 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      * Add linux <a href="http://man7.org/linux/man-pages/man7/capabilities.7.html">kernel capability</a> to the container. For example:
-     * adding {@link Capability#MKNOD} allows the container to create special files using the 'mknod' command.
+     * adding Capability#MKNOD allows the container to create special files using the 'mknod' command.
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withCapAdd(Capability... capAdd) {
@@ -541,9 +541,9 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      * Add linux <a href="http://man7.org/linux/man-pages/man7/capabilities.7.html">kernel capability</a> to the container. For example:
-     * adding {@link Capability#MKNOD} allows the container to create special files using the 'mknod' command.
+     * adding Capability#MKNOD allows the container to create special files using the 'mknod' command.
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withCapAdd(List<Capability> capAdd) {
@@ -553,7 +553,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @CheckForNull
     @Deprecated
@@ -564,9 +564,9 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      * Drop linux <a href="http://man7.org/linux/man-pages/man7/capabilities.7.html">kernel capability</a> from the container. For example:
-     * dropping {@link Capability#CHOWN} prevents the container from changing the owner of any files.
+     * dropping Capability#CHOWN prevents the container from changing the owner of any files.
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withCapDrop(Capability... capDrop) {
@@ -577,9 +577,9 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      * Drop linux <a href="http://man7.org/linux/man-pages/man7/capabilities.7.html">kernel capability</a> from the container. For example:
-     * dropping {@link Capability#CHOWN} prevents the container from changing the owner of any files.
+     * dropping Capability#CHOWN prevents the container from changing the owner of any files.
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withCapDrop(List<Capability> capDrop) {
@@ -598,12 +598,12 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     CreateContainerCmd withHostConfig(HostConfig hostConfig);
 
-    // The following methods are deprecated and should be set on {@link #getHostConfig()} instead.
+    // The following methods are deprecated and should be set on #getHostConfig() instead.
     // TODO remove in the next big release
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -614,7 +614,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @CheckForNull
     @Deprecated
@@ -625,7 +625,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -637,7 +637,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -648,7 +648,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -659,7 +659,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -670,7 +670,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -681,7 +681,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -692,7 +692,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -703,7 +703,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -714,7 +714,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -725,7 +725,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -736,7 +736,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -747,7 +747,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -758,7 +758,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -769,7 +769,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @CheckForNull
@@ -780,7 +780,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withBlkioWeight(Integer blkioWeight) {
@@ -790,7 +790,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withCgroupParent(String cgroupParent) {
@@ -800,7 +800,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withContainerIDFile(String containerIDFile) {
@@ -810,7 +810,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withCpuPeriod(Integer cpuPeriod) {
@@ -820,7 +820,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withCpuShares(Integer cpuShares) {
@@ -830,7 +830,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withCpusetCpus(String cpusetCpus) {
@@ -840,7 +840,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withCpusetMems(String cpusetMems) {
@@ -850,7 +850,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withDevices(Device... devices) {
@@ -861,7 +861,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
     /**
      * Add host devices to the container
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withDevices(List<Device> devices) {
@@ -872,7 +872,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
     /**
      * Set custom DNS servers
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withDns(String... dns) {
@@ -883,7 +883,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
     /**
      * Set custom DNS servers
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withDns(List<String> dns) {
@@ -894,7 +894,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
     /**
      * Set custom DNS search domains
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withDnsSearch(String... dnsSearch) {
@@ -905,7 +905,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
     /**
      * Set custom DNS search domains
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withDnsSearch(List<String> dnsSearch) {
@@ -915,7 +915,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withLogConfig(LogConfig logConfig) {
@@ -925,7 +925,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withLxcConf(LxcConf... lxcConf) {
@@ -935,7 +935,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withLxcConf(List<LxcConf> lxcConf) {
@@ -945,7 +945,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withOomKillDisable(Boolean oomKillDisable) {
@@ -956,7 +956,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
     /**
      * Set the PID (Process) Namespace mode for the container, 'host': use the host's PID namespace inside the container
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withPidMode(String pidMode) {
@@ -966,7 +966,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withReadonlyRootfs(Boolean readonlyRootfs) {
@@ -975,9 +975,9 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
     }
 
     /**
-     * Set custom {@link RestartPolicy} for the container. Defaults to {@link RestartPolicy#noRestart()}
+     * Set custom RestartPolicy for the container. Defaults to RestartPolicy#noRestart()
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withRestartPolicy(RestartPolicy restartPolicy) {
@@ -987,7 +987,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     @JsonIgnore
@@ -998,7 +998,7 @@ public interface CreateContainerCmd extends SyncDockerCmd<CreateContainerRespons
 
     /**
      *
-     * @deprecated see {@link #getHostConfig()}
+     * @deprecated see #getHostConfig()
      */
     @Deprecated
     default CreateContainerCmd withUlimits(List<Ulimit> ulimits) {

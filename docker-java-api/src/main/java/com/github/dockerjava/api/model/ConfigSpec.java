@@ -7,7 +7,7 @@ import lombok.ToString;
 import java.io.Serializable;
 
 /**
- * @since {@link RemoteApiVersion#VERSION_1_30}
+ * @since RemoteApiVersion#VERSION_1_30
  */
 @EqualsAndHashCode
 @ToString

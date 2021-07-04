@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Specification for DNS related configurations in resolver configuration file (&#x60;resolv.conf&#x60;).
  *
- * @since {@link RemoteApiVersion#VERSION_1_25}
+ * @since RemoteApiVersion#VERSION_1_25
  */
 @EqualsAndHashCode
 @ToString

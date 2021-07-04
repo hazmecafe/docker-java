@@ -15,7 +15,7 @@ import javax.annotation.Nonnull;
 /**
  * Update swarmNode spec
  *
- * @since {@link RemoteApiVersion#VERSION_1_24}
+ * @since RemoteApiVersion#VERSION_1_24
  */
 public class UpdateSwarmNodeCmdImpl extends AbstrDockerCmd<UpdateSwarmNodeCmd, Void>
         implements UpdateSwarmNodeCmd {

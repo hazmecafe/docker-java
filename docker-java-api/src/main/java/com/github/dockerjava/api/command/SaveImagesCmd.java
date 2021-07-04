@@ -29,13 +29,13 @@ public interface SaveImagesCmd extends SyncDockerCmd<InputStream> {
 
 
     /**
-     * Gets the images that were added by {@link #withImage(String, String)}.
+     * Gets the images that were added by #withImage(String, String).
      * @return images to be downloaded
      */
     List<TaggedImage> getImages();
 
     /**
-     * Its the responsibility of the caller to consume and/or close the {@link InputStream} to prevent connection leaks.
+     * Its the responsibility of the caller to consume and/or close the InputStream to prevent connection leaks.
      *
      * @throws NotFoundException no such image
      */

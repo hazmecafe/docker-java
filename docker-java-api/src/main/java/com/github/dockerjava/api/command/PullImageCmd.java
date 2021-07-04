@@ -34,7 +34,7 @@ public interface PullImageCmd extends AsyncDockerCmd<PullImageCmd, PullResponseI
     PullImageCmd withTag(String tag);
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_32}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_32
      */
     PullImageCmd withPlatform(String tag);
 

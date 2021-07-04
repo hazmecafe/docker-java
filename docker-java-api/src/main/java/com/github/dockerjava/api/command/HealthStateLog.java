@@ -31,7 +31,7 @@ public class HealthStateLog extends DockerObject {
 
     /**
      *
-     * @deprecated use {@link #getExitCodeLong()}
+     * @deprecated use #getExitCodeLong()
      */
     @Deprecated
     public Integer getExitCode() {

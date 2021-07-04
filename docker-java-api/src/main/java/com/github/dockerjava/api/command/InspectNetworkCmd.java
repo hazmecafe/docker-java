@@ -9,7 +9,7 @@ import javax.annotation.Nonnull;
 /**
  * Inspect a network.
  *
- * @since {@link RemoteApiVersion#VERSION_1_21}
+ * @since RemoteApiVersion#VERSION_1_21
  */
 public interface InspectNetworkCmd extends SyncDockerCmd<Network> {
 

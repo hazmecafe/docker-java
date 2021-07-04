@@ -38,19 +38,19 @@ public class AuthConfig extends DockerObject implements Serializable {
     private String auth;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("registrytoken")
     private String registrytoken;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_23}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_23
      */
     @JsonProperty("identitytoken")
     private String identitytoken;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_25}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_25
      */
     @JsonProperty("stackOrchestrator")
     @ToString.Include

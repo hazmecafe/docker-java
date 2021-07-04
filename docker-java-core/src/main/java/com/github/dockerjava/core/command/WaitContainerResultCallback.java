@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
  *
  * @author Marcus Linke
  *
- * @deprecated use {@link com.github.dockerjava.api.command.WaitContainerResultCallback}
+ * @deprecated use com.github.dockerjava.api.command.WaitContainerResultCallback
  */
 @Deprecated
 public class WaitContainerResultCallback extends ResultCallbackTemplate<WaitContainerResultCallback, WaitResponse> {

@@ -20,7 +20,7 @@ public class Info extends DockerObject implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("Architecture")
     private String architecture;
@@ -29,31 +29,31 @@ public class Info extends DockerObject implements Serializable {
     private Integer containers;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("ContainersStopped")
     private Integer containersStopped;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("ContainersPaused")
     private Integer containersPaused;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("ContainersRunning")
     private Integer containersRunning;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20
      */
     @JsonProperty("CpuCfsPeriod")
     private Boolean cpuCfsPeriod;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20
      */
     @JsonProperty("CpuCfsQuota")
     private Boolean cpuCfsQuota;
@@ -68,7 +68,7 @@ public class Info extends DockerObject implements Serializable {
     private Boolean debug;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21
      */
     @JsonProperty("DiscoveryBackend")
     private String discoveryBackend;
@@ -86,7 +86,7 @@ public class Info extends DockerObject implements Serializable {
     private List<Object> systemStatus;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("Plugins")
     private Map<String, List<String>> plugins;
@@ -98,19 +98,19 @@ public class Info extends DockerObject implements Serializable {
     private String loggingDriver;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20
      */
     @JsonProperty("ExperimentalBuild")
     private Boolean experimentalBuild;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20
      */
     @JsonProperty("HttpProxy")
     private String httpProxy;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20
      */
     @JsonProperty("HttpsProxy")
     private String httpsProxy;
@@ -167,25 +167,25 @@ public class Info extends DockerObject implements Serializable {
     private Integer nGoroutines;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20
      */
     @JsonProperty("NoProxy")
     private String noProxy;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20
      */
     @JsonProperty("OomKillDisable")
     private Boolean oomKillDisable;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("OSType")
     private String osType;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("OomScoreAdj")
     private Integer oomScoreAdj;
@@ -203,13 +203,13 @@ public class Info extends DockerObject implements Serializable {
     private Boolean swapLimit;
 
     /**
-     * @since ~{@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20}
+     * @since ~com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20
      */
     @JsonProperty("SystemTime")
     private String systemTime;
 
     /**
-     * @since ~{@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21}
+     * @since ~com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21
      */
     @JsonProperty("ServerVersion")
     private String serverVersion;
@@ -227,7 +227,7 @@ public class Info extends DockerObject implements Serializable {
     private SwarmInfo swarm;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_25}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_25
      */
     @JsonProperty("Isolation")
     private String isolation;

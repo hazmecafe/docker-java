@@ -8,7 +8,7 @@ import javax.annotation.CheckForNull;
 /**
  * Command to create a new secret
  *
- * @since {@link RemoteApiVersion#VERSION_1_25}
+ * @since RemoteApiVersion#VERSION_1_25
  */
 public interface CreateSecretCmd extends SyncDockerCmd<CreateSecretResponse> {
 

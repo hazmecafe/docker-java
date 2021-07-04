@@ -8,9 +8,9 @@ import javax.annotation.CheckForNull;
 import java.io.Serializable;
 
 /**
- * Part of {@link Version}
+ * Part of Version
  *
- * @since {@link RemoteApiVersion#VERSION_1_35}
+ * @since RemoteApiVersion#VERSION_1_35
  * @author Dmitry Tretyakov
  */
 @EqualsAndHashCode

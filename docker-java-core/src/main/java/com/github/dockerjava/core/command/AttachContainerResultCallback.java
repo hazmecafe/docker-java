@@ -13,7 +13,7 @@ import com.github.dockerjava.core.async.ResultCallbackTemplate;
  *
  * @author Marcus Linke
  *
- * @deprecated use {@link com.github.dockerjava.api.async.ResultCallback.Adapter}
+ * @deprecated use com.github.dockerjava.api.async.ResultCallback.Adapter
  */
 @Deprecated
 public class AttachContainerResultCallback extends ResultCallbackTemplate<AttachContainerResultCallback, Frame> {

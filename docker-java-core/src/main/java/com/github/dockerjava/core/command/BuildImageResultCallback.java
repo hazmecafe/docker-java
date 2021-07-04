@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
  *
  * @author Marcus Linke
  *
- * @deprecated use {@link com.github.dockerjava.api.command.BuildImageResultCallback}
+ * @deprecated use com.github.dockerjava.api.command.BuildImageResultCallback
  */
 @Deprecated
 public class BuildImageResultCallback extends ResultCallbackTemplate<BuildImageResultCallback, BuildResponseItem> {

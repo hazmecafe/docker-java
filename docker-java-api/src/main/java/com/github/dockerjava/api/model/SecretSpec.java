@@ -10,7 +10,7 @@ import java.util.Base64;
 import java.util.Map;
 
 /**
- * @since {@link RemoteApiVersion#VERSION_1_25}
+ * @since RemoteApiVersion#VERSION_1_25
  */
 @EqualsAndHashCode
 @ToString

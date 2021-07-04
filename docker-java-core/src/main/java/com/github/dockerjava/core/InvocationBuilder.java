@@ -42,7 +42,7 @@ public interface InvocationBuilder {
     void put(InputStream body, MediaType mediaType);
 
     /**
-     * Implementation of {@link ResultCallback} with the single result event expected.
+     * Implementation of ResultCallback with the single result event expected.
      */
     class AsyncResultCallback<A_RES_T>
             extends ResultCallbackTemplate<InvocationBuilder.AsyncResultCallback<A_RES_T>, A_RES_T> {
@@ -78,7 +78,7 @@ public interface InvocationBuilder {
         }
 
         /**
-         * Blocks until {@link ResultCallback#onNext(Object)} was called for the first time
+         * Blocks until ResultCallback#onNext(Object) was called for the first time
          */
         @SuppressWarnings("unchecked")
         public A_RES_T awaitResult() {

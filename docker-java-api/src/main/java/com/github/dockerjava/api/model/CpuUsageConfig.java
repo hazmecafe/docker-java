@@ -9,7 +9,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Used in {@link Statistics}
+ * Used in Statistics
  *
  * @author Yuting Liu
  */

@@ -1,7 +1,7 @@
 package com.github.dockerjava.api.model;
 
 /**
- * The Linux capabilities supported by Docker. The list of capabilities is defined in Docker's types.go, {@link #ALL} was added manually.
+ * The Linux capabilities supported by Docker. The list of capabilities is defined in Docker's types.go, #ALL was added manually.
  *
  * @see <a href="http://man7.org/linux/man-pages/man7/capabilities.7.html">http://man7.org/linux/man-pages/man7/capabilities.7.html</a>
  */
@@ -41,7 +41,7 @@ public enum Capability {
     /**
      * <ul>
      * <li>Bypass permission checks on operations that normally require the file system UID of the process to match the UID of the file
-     * (e.g., chmod(2), utime(2)), excluding those operations covered by the {@link #DAC_OVERRIDE} and {@link #DAC_READ_SEARCH}.
+     * (e.g., chmod(2), utime(2)), excluding those operations covered by the #DAC_OVERRIDE and #DAC_READ_SEARCH.
      * <li>Set extended file attributes (see chattr(1)) on arbitrary files.
      * <li>Set Access Control Lists (ACLs) on arbitrary files.
      * <li>Ignore directory sticky bit on file deletion.

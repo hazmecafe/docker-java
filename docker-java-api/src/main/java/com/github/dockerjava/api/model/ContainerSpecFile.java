@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * File represents a specific target that is backed by a file.
  *
- * @since {@link RemoteApiVersion#VERSION_1_26}
+ * @since
  */
 @EqualsAndHashCode
 @ToString

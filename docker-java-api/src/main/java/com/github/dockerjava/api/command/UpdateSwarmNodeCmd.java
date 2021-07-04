@@ -8,7 +8,7 @@ import javax.annotation.Nonnull;
 /**
  * Update swarmNode spec
  *
- * @since {@link RemoteApiVersion#VERSION_1_24}
+ * @since RemoteApiVersion#VERSION_1_24
  */
 public interface UpdateSwarmNodeCmd extends SyncDockerCmd<Void> {
 

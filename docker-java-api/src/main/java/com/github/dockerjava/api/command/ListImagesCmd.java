@@ -40,7 +40,7 @@ public interface ListImagesCmd extends SyncDockerCmd<List<Image>> {
 
     /**
      * @param labels
-     *            - {@link Map} of labels that contains label keys and values
+     *            - Map of labels that contains label keys and values
      */
     ListImagesCmd withLabelFilter(Map<String, String> labels);
 

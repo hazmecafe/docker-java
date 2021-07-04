@@ -32,11 +32,11 @@ public class VolumesFrom implements Serializable {
     }
 
     /**
-     * Parses a volume from specification to a {@link VolumesFrom}.
+     * Parses a volume from specification to a VolumesFrom.
      *
      * @param serialized
      *            the specification, e.g. <code>container:ro</code>
-     * @return a {@link VolumesFrom} matching the specification
+     * @return a VolumesFrom matching the specification
      * @throws IllegalArgumentException
      *             if the specification cannot be parsed
      */
@@ -62,10 +62,10 @@ public class VolumesFrom implements Serializable {
     }
 
     /**
-     * Returns a string representation of this {@link VolumesFrom} suitable for inclusion in a JSON message. The format is
-     * <code>&lt;container&gt;:&lt;access mode&gt;</code>, like the argument in {@link #parse(String)}.
+     * Returns a string representation of this VolumesFrom suitable for inclusion in a JSON message. The format is
+     * <code>&lt;container&gt;:&lt;access mode&gt;</code>, like the argument in #parse(String).
      *
-     * @return a string representation of this {@link VolumesFrom}
+     * @return a string representation of this VolumesFrom
      */
     @Override
     @JsonValue

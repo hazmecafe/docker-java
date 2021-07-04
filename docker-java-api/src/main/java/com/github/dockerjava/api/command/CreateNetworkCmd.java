@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * Create a network.
  *
- * @since {@link RemoteApiVersion#VERSION_1_21}
+ * @since RemoteApiVersion#VERSION_1_21
  */
 public interface CreateNetworkCmd extends SyncDockerCmd<CreateNetworkResponse> {
 
@@ -62,14 +62,14 @@ public interface CreateNetworkCmd extends SyncDockerCmd<CreateNetworkResponse> {
     /**
      * If enabled, and the network is in the global scope,  non-service containers on worker nodes will be able to connect to the network.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     CreateNetworkCmd withAttachable(Boolean attachable);
 
     /**
      * Add label for network
      *
-     * @since {@link RemoteApiVersion#VERSION_1_24}
+     * @since RemoteApiVersion#VERSION_1_24
      */
     CreateNetworkCmd withLabels(Map<String, String> labels);
 

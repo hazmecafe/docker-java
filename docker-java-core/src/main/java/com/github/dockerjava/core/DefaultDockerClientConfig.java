@@ -413,9 +413,9 @@ public class DefaultDockerClientConfig implements Serializable, DockerClientConf
         }
 
         /**
-         * Overrides the default {@link SSLConfig} that is used when calling {@link Builder#withDockerTlsVerify(java.lang.Boolean)} and
-         * {@link Builder#withDockerCertPath(String)}. This way it is possible to pass a custom {@link SSLConfig} to the resulting
-         * {@link DockerClientConfig} that may be created by other means than the local file system.
+         * Overrides the default SSLConfig that is used when calling Builder#withDockerTlsVerify(java.lang.Boolean) and
+         * Builder#withDockerCertPath(String). This way it is possible to pass a custom SSLConfig to the resulting
+         * DockerClientConfig that may be created by other means than the local file system.
          */
         public final Builder withCustomSslConfig(SSLConfig customSslConfig) {
             this.customSslConfig = customSslConfig;

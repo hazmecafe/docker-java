@@ -35,7 +35,7 @@ public interface BuildImageCmd extends AsyncDockerCmd<BuildImageCmd, BuildRespon
      * "t" in API
      *
      * @deprecated since docker API version 1.21 there can be multiple tags
-     * specified so use {@link #getTags()}
+     * specified so use #getTags()
      */
     @CheckForNull
     @Deprecated
@@ -44,7 +44,7 @@ public interface BuildImageCmd extends AsyncDockerCmd<BuildImageCmd, BuildRespon
     /**
      * Multple "t" tags.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     @CheckForNull
     Set<String> getTags();
@@ -107,25 +107,25 @@ public interface BuildImageCmd extends AsyncDockerCmd<BuildImageCmd, BuildRespon
     String getCpusetcpus();
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     @CheckForNull
     Map<String, String> getBuildArgs();
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_22}
+     * @since RemoteApiVersion#VERSION_1_22
      */
     @CheckForNull
     Long getShmsize();
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_23}
+     * @since RemoteApiVersion#VERSION_1_23
      */
     @CheckForNull
     Map<String, String> getLabels();
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_25}
+     * @since RemoteApiVersion#VERSION_1_25
      */
     @CheckForNull
     String getNetworkMode();
@@ -133,19 +133,19 @@ public interface BuildImageCmd extends AsyncDockerCmd<BuildImageCmd, BuildRespon
     /**
      * "platform" in API
      *
-     * @since {@link RemoteApiVersion#VERSION_1_32}
+     * @since RemoteApiVersion#VERSION_1_32
      */
     @CheckForNull
     String getPlatform();
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_38}
+     * @since RemoteApiVersion#VERSION_1_38
      */
     @CheckForNull
     String getTarget();
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_28}
+     * @since RemoteApiVersion#VERSION_1_28
      */
     @CheckForNull
     Set<String> getExtraHosts();
@@ -154,7 +154,7 @@ public interface BuildImageCmd extends AsyncDockerCmd<BuildImageCmd, BuildRespon
 
     /**
      * @deprecated since docker API version 1.21 there can be multiple tags
-     * specified so use {@link BuildImageCmd#withTags(java.util.Set)}
+     * specified so use BuildImageCmd#withTags(java.util.Set)
      */
     @Deprecated
     BuildImageCmd withTag(String tag);
@@ -162,7 +162,7 @@ public interface BuildImageCmd extends AsyncDockerCmd<BuildImageCmd, BuildRespon
     BuildImageCmd withTags(Set<String> tags);
 
     /*
-     * @since {@link RemoteApiVersion#VERSION_1_25}
+     * @since RemoteApiVersion#VERSION_1_25
      */
     BuildImageCmd withCacheFrom(Set<String> cacheFrom);
 
@@ -193,7 +193,7 @@ public interface BuildImageCmd extends AsyncDockerCmd<BuildImageCmd, BuildRespon
     BuildImageCmd withCpusetcpus(String cpusetcpus);
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     BuildImageCmd withBuildArg(String key, String value);
 
@@ -204,32 +204,32 @@ public interface BuildImageCmd extends AsyncDockerCmd<BuildImageCmd, BuildRespon
     BuildImageCmd withTarInputStream(@Nonnull InputStream tarInputStream);
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_22}
+     * @since RemoteApiVersion#VERSION_1_22
      */
     BuildImageCmd withShmsize(Long shmsize);
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_23}
+     * @since RemoteApiVersion#VERSION_1_23
      */
     BuildImageCmd withLabels(Map<String, String> labels);
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_25}
+     * @since RemoteApiVersion#VERSION_1_25
      */
     BuildImageCmd withNetworkMode(String networkMode);
 
     /**
-     *@since {@link RemoteApiVersion#VERSION_1_32}
+     *@since RemoteApiVersion#VERSION_1_32
      */
     BuildImageCmd withPlatform(String platform);
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_38}
+     * @since RemoteApiVersion#VERSION_1_38
      */
     BuildImageCmd withTarget(String target);
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_28}
+     * @since RemoteApiVersion#VERSION_1_28
      */
     BuildImageCmd withExtraHosts(Set<String> extraHosts);
 

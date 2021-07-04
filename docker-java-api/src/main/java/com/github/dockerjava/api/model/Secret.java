@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  * Used for Listing secret.
  *
- * @since {@link RemoteApiVersion#VERSION_1_25}
+ * @since RemoteApiVersion#VERSION_1_25
  */
 @EqualsAndHashCode
 @ToString

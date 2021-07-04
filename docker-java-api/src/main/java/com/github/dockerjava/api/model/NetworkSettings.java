@@ -78,21 +78,21 @@ public class NetworkSettings extends DockerObject implements Serializable {
     private Map<String, ContainerNetwork> networks;
 
     /**
-     * @deprecated since {@link RemoteApiVersion#VERSION_1_21}
+     * @deprecated since RemoteApiVersion#VERSION_1_21
      */
     public String getIpAddress() {
         return ipAddress;
     }
 
     /**
-     * @deprecated since {@link RemoteApiVersion#VERSION_1_21}
+     * @deprecated since RemoteApiVersion#VERSION_1_21
      */
     public Integer getIpPrefixLen() {
         return ipPrefixLen;
     }
 
     /**
-     * @deprecated since {@link RemoteApiVersion#VERSION_1_21}
+     * @deprecated since RemoteApiVersion#VERSION_1_21
      */
     public String getGateway() {
         return gateway;
@@ -103,14 +103,14 @@ public class NetworkSettings extends DockerObject implements Serializable {
     }
 
     /**
-     * @deprecated since {@link RemoteApiVersion#VERSION_1_21}
+     * @deprecated since RemoteApiVersion#VERSION_1_21
      */
     public Map<String, Map<String, String>> getPortMapping() {
         return portMapping;
     }
 
     /**
-     * @deprecated since {@link RemoteApiVersion#VERSION_1_21}
+     * @deprecated since RemoteApiVersion#VERSION_1_21
      */
     public String getMacAddress() {
         return macAddress;
@@ -121,7 +121,7 @@ public class NetworkSettings extends DockerObject implements Serializable {
     }
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     public String getEndpointID() {
         return endpointID;
@@ -132,70 +132,70 @@ public class NetworkSettings extends DockerObject implements Serializable {
     }
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     public Map<String, ContainerNetwork> getNetworks() {
         return networks;
     }
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     public String getSandboxId() {
         return sandboxId;
     }
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     public String getSandboxKey() {
         return sandboxKey;
     }
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     public Object getSecondaryIPAddresses() {
         return secondaryIPAddresses;
     }
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     public Object getSecondaryIPv6Addresses() {
         return secondaryIPv6Addresses;
     }
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     public Boolean getHairpinMode() {
         return hairpinMode;
     }
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     public String getLinkLocalIPv6Address() {
         return linkLocalIPv6Address;
     }
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     public Integer getLinkLocalIPv6PrefixLen() {
         return linkLocalIPv6PrefixLen;
     }
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     public String getGlobalIPv6Address() {
         return globalIPv6Address;
     }
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     public Integer getGlobalIPv6PrefixLen() {
         return globalIPv6PrefixLen;

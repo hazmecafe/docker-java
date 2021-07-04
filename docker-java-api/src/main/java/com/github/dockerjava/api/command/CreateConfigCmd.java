@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * Command to create a new config
  *
- * @since {@link RemoteApiVersion#VERSION_1_30}
+ * @since RemoteApiVersion#VERSION_1_30
  */
 public interface CreateConfigCmd extends SyncDockerCmd<CreateConfigResponse> {
 

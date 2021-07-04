@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * docker configs that will be exposed to the service
  *
- * @since {@link RemoteApiVersion#VERSION_1_29}
+ * @since RemoteApiVersion#VERSION_1_29
  */
 @EqualsAndHashCode
 @ToString

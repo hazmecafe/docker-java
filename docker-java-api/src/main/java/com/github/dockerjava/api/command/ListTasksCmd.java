@@ -14,7 +14,7 @@ public interface ListTasksCmd extends SyncDockerCmd<List<Task>> {
 
     /**
      * @param labels - Show only tasks with the passed labels.
-     *               Labels is a {@link Map} that contains label keys and values
+     *               Labels is a Map that contains label keys and values
      */
     ListTasksCmd withLabelFilter(Map<String, String> labels);
 

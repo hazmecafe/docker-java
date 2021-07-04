@@ -6,7 +6,7 @@ import javax.annotation.Nonnull;
 /**
  * Disconnects a container from a network.
  *
- * @since {@link RemoteApiVersion#VERSION_1_21}
+ * @since RemoteApiVersion#VERSION_1_21
  */
 public interface DisconnectFromNetworkCmd extends SyncDockerCmd<Void> {
 

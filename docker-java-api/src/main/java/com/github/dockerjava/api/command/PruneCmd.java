@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * Delete unused content (containers, images, volumes, networks, build relicts)
  *
- * @since {@link RemoteApiVersion#VERSION_1_25}
+ * @since RemoteApiVersion#VERSION_1_25
  */
 public interface PruneCmd extends SyncDockerCmd<PruneResponse> {
 

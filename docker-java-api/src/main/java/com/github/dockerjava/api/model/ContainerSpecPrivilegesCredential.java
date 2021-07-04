@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * Credential for managed service account (Windows only)
  *
- * @since {@link RemoteApiVersion#VERSION_1_29}
+ * @since RemoteApiVersion#VERSION_1_29
  */
 @EqualsAndHashCode
 @ToString

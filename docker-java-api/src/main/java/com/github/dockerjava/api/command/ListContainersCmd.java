@@ -87,7 +87,7 @@ public interface ListContainersCmd extends SyncDockerCmd<List<Container>> {
 
     /**
      * @param labels
-     *            - Show only containers with the passed labels. Labels is a {@link Map} that contains label keys and values
+     *            - Show only containers with the passed labels. Labels is a Map that contains label keys and values
      */
     ListContainersCmd withLabelFilter(Map<String, String> labels);
 

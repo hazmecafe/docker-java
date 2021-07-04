@@ -11,8 +11,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 
 /**
- * As there may be several {@link Binding}s per {@link ExposedPort}, it makes a difference if you add {@link PortBinding}s for the same or
- * different {@link ExposedPort}s to {@link Ports}. This test verifies that the Map in {@link Ports} is populated correctly in both cases.
+ * As there may be several Bindings per ExposedPort, it makes a difference if you add PortBindings for the same or
+ * different ExposedPorts to Ports. This test verifies that the Map in Ports is populated correctly in both cases.
  */
 public class PortsAddBindingsTest {
     private static final ExposedPort TCP_80 = ExposedPort.tcp(80);

@@ -7,7 +7,7 @@ import lombok.ToString;
 import java.io.Serializable;
 
 /**
- * @since {@link RemoteApiVersion#VERSION_1_24}
+ * @since RemoteApiVersion#VERSION_1_24
  */
 @EqualsAndHashCode
 @ToString
@@ -29,7 +29,7 @@ public class TaskStatusContainerStatus extends DockerObject implements Serializa
 
     /**
      *
-     * @deprecated use {@link #getPidLong()}
+     * @deprecated use #getPidLong()
      */
     @Deprecated
     public Integer getPid() {
@@ -41,7 +41,7 @@ public class TaskStatusContainerStatus extends DockerObject implements Serializa
     }
 
     /**
-     * @deprecated use {@link #getExitCodeLong()}
+     * @deprecated use #getExitCodeLong()
      */
     @Deprecated
     public Integer getExitCode() {
@@ -64,7 +64,7 @@ public class TaskStatusContainerStatus extends DockerObject implements Serializa
 
     /**
      *
-     * @deprecated use {@link #withPid(Long)}
+     * @deprecated use #withPid(Long)
      */
     @Deprecated
     public TaskStatusContainerStatus withPid(Integer pid) {
@@ -79,7 +79,7 @@ public class TaskStatusContainerStatus extends DockerObject implements Serializa
 
     /**
      *
-     * @deprecated use {@link #withExitCode(Long)}
+     * @deprecated use #withExitCode(Long)
      */
     @Deprecated
     public TaskStatusContainerStatus withExitCode(Integer exitCode) {

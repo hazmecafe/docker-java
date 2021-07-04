@@ -29,7 +29,7 @@ public class InspectExecResponse extends DockerObject {
     private Boolean running;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_22}
+     * @since RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("CanRemove")
     private Boolean canRemove;
@@ -41,26 +41,26 @@ public class InspectExecResponse extends DockerObject {
     private ProcessConfig processConfig;
 
     /**
-     * @deprecated @since {@link RemoteApiVersion#VERSION_1_22}
+     * @deprecated @since RemoteApiVersion#VERSION_1_22
      */
     @Deprecated
     @JsonProperty("Container")
     private Container container;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_22}
+     * @since RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("ContainerID")
     private String containerID;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_22}
+     * @since RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("DetachKeys")
     private String detachKeys;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_25}
+     * @since RemoteApiVersion#VERSION_1_25
      */
     @JsonProperty("Pid")
     private Long pid;
@@ -86,7 +86,7 @@ public class InspectExecResponse extends DockerObject {
     }
 
     /**
-     * @deprecated use {@link #getExitCodeLong()}
+     * @deprecated use #getExitCodeLong()
      */
     @Deprecated
     public Integer getExitCode() {
@@ -135,7 +135,7 @@ public class InspectExecResponse extends DockerObject {
 
     /**
      * @see #pid
-     * @deprecated use {@link #getPidLong()}
+     * @deprecated use #getPidLong()
      */
     @CheckForNull
     @Deprecated
@@ -199,7 +199,7 @@ public class InspectExecResponse extends DockerObject {
         private NetworkSettings networkSettings;
 
         /**
-         * @since {@link RemoteApiVersion#VERSION_1_21}
+         * @since RemoteApiVersion#VERSION_1_21
          */
         public NetworkSettings getNetworkSettings() {
             return networkSettings;

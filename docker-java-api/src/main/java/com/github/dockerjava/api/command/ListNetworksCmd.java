@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * List networks.
  *
- * @since {@link RemoteApiVersion#VERSION_1_21}
+ * @since RemoteApiVersion#VERSION_1_21
  */
 public interface ListNetworksCmd extends SyncDockerCmd<List<Network>> {
 

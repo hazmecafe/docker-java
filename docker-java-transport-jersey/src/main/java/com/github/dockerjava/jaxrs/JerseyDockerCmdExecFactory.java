@@ -15,7 +15,7 @@ import javax.ws.rs.client.ClientResponseFilter;
 //import org.glassfish.jersey.apache.connector.ApacheConnectorProvider;
 // see https://github.com/docker-java/docker-java/issues/196
 /**
- * @deprecated use {@link JerseyDockerHttpClient} with {@link DockerClientImpl#getInstance(DockerClientConfig, DockerHttpClient)}
+ * @deprecated use JerseyDockerHttpClient with DockerClientImpl#getInstance(DockerClientConfig, DockerHttpClient)
  */
 @Deprecated
 public class JerseyDockerCmdExecFactory extends DelegatingDockerCmdExecFactory implements DockerClientConfigAware {

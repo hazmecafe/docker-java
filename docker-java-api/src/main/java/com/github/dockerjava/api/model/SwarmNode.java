@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * Used for Listing SwarmNodes.
  *
- * @since {@link RemoteApiVersion#VERSION_1_24}
+ * @since RemoteApiVersion#VERSION_1_24
  */
 @EqualsAndHashCode
 @ToString

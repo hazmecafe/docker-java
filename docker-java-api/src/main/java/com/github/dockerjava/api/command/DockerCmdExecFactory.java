@@ -76,7 +76,7 @@ public interface DockerCmdExecFactory extends Closeable {
     /**
      * Rename container.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_17}
+     * @since RemoteApiVersion#VERSION_1_17
      */
     RenameContainerCmd.Exec createRenameContainerCmdExec();
 
@@ -132,42 +132,42 @@ public interface DockerCmdExecFactory extends Closeable {
     /**
      * Command to list all services in a docker swarm. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_24}
+     * @since RemoteApiVersion#VERSION_1_24
      */
     ListServicesCmd.Exec createListServicesCmdExec();
 
     /**
      * Command to create a new service in a docker swarm. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_24}
+     * @since RemoteApiVersion#VERSION_1_24
      */
     CreateServiceCmd.Exec createCreateServiceCmdExec();
 
     /**
      * Command to inspect a service in a docker swarm. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_24}
+     * @since RemoteApiVersion#VERSION_1_24
      */
     InspectServiceCmd.Exec createInspectServiceCmdExec();
 
     /**
      * Command to update a service specification in a docker swarm. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_24}
+     * @since RemoteApiVersion#VERSION_1_24
      */
     UpdateServiceCmd.Exec createUpdateServiceCmdExec();
 
     /**
      * Command to remove a service in a docker swarm. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_24}
+     * @since RemoteApiVersion#VERSION_1_24
      */
     RemoveServiceCmd.Exec createRemoveServiceCmdExec();
 
     /**
      * @param endpoint endpoint name to tail logs
      * @return
-     * @since {@link RemoteApiVersion#VERSION_1_29}
+     * @since RemoteApiVersion#VERSION_1_29
      */
     LogSwarmObjectCmd.Exec logSwarmObjectExec(String endpoint);
 
@@ -176,91 +176,91 @@ public interface DockerCmdExecFactory extends Closeable {
     /**
      * List all nodes. Node operations require the engine to be part of a swarm
      *
-     * @since {@link RemoteApiVersion#VERSION_1_24}
+     * @since RemoteApiVersion#VERSION_1_24
      */
     ListSwarmNodesCmd.Exec listSwarmNodeCmdExec();
 
     /**
      * Return low-level information on the node. Node operations require the engine to be part of a swarm
      *
-     * @since {@link RemoteApiVersion#VERSION_1_24}
+     * @since RemoteApiVersion#VERSION_1_24
      */
     InspectSwarmNodeCmd.Exec inspectSwarmNodeCmdExec();
 
     /**
      * Remove a node from the swarm. Node operations require the engine to be part of a swarm
      *
-     * @since {@link RemoteApiVersion#VERSION_1_24}
+     * @since RemoteApiVersion#VERSION_1_24
      */
     RemoveSwarmNodeCmd.Exec removeSwarmNodeCmdExec();
 
     /**
      * Update a node. Node operations require the engine to be part of a swarm
      *
-     * @since {@link RemoteApiVersion#VERSION_1_24}
+     * @since RemoteApiVersion#VERSION_1_24
      */
     UpdateSwarmNodeCmd.Exec updateSwarmNodeCmdExec();
 
     /**
      * Update a node. Node operations require the engine to be part of a swarm
      *
-     * @since {@link RemoteApiVersion#VERSION_1_24}
+     * @since RemoteApiVersion#VERSION_1_24
      */
     ListTasksCmd.Exec listTasksCmdExec();
 
     /**
      * Delete unused content (containers, images, volumes, networks, build relicts)
      *
-     * @since {@link RemoteApiVersion#VERSION_1_25}
+     * @since RemoteApiVersion#VERSION_1_25
      */
     PruneCmd.Exec pruneCmdExec();
 
     /**
      * Command to list all secrets.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_25}
+     * @since RemoteApiVersion#VERSION_1_25
      */
     ListSecretsCmd.Exec createListSecretsCmdExec();
 
     /**
      * Command to create a new secret in a docker swarm. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_25}
+     * @since RemoteApiVersion#VERSION_1_25
      */
     CreateSecretCmd.Exec createCreateSecretCmdExec();
 
     /**
      * Command to remove a secret in a docker swarm. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_25}
+     * @since RemoteApiVersion#VERSION_1_25
      */
     RemoveSecretCmd.Exec createRemoveSecretCmdExec();
 
     /**
      * Command to list all configs.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_30}
+     * @since RemoteApiVersion#VERSION_1_30
      */
     ListConfigsCmd.Exec createListConfigsCmdExec();
 
     /**
      * Command to inspect a config in a docker swarm. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_30}
+     * @since RemoteApiVersion#VERSION_1_30
      */
     InspectConfigCmd.Exec createInspectConfigCmdExec();
 
     /**
      * Command to create a new config in a docker swarm. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_30}
+     * @since RemoteApiVersion#VERSION_1_30
      */
     CreateConfigCmd.Exec createCreateConfigCmdExec();
 
     /**
      * Command to remove a config in a docker swarm. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_30}
+     * @since RemoteApiVersion#VERSION_1_30
      */
     RemoveConfigCmd.Exec createRemoveConfigCmdExec();
 

@@ -28,7 +28,7 @@ public class DockerClientBuilder {
 
     /**
      *
-     * @deprecated use {@link #getInstance(DockerClientConfig)}
+     * @deprecated use #getInstance(DockerClientConfig)
      */
     @Deprecated
     public static DockerClientBuilder getInstance(DefaultDockerClientConfig.Builder dockerClientConfigBuilder) {
@@ -41,7 +41,7 @@ public class DockerClientBuilder {
 
     /**
      *
-     * @deprecated use {@link DefaultDockerClientConfig.Builder#withDockerHost(String)}
+     * @deprecated use DefaultDockerClientConfig.Builder#withDockerHost(String)
      */
     @Deprecated
     public static DockerClientBuilder getInstance(String serverUrl) {
@@ -54,7 +54,7 @@ public class DockerClientBuilder {
 
     /**
      *
-     * @deprecated no replacement, use one of {@link DockerHttpClient}
+     * @deprecated no replacement, use one of DockerHttpClient
      */
     @Deprecated
     public static DockerCmdExecFactory getDefaultDockerCmdExecFactory() {
@@ -62,9 +62,9 @@ public class DockerClientBuilder {
     }
 
     /**
-     * Note that this method overrides {@link DockerHttpClient} if it was previously set
+     * Note that this method overrides DockerHttpClient if it was previously set
      *
-     * @deprecated use {@link #withDockerHttpClient(DockerHttpClient)}
+     * @deprecated use #withDockerHttpClient(DockerHttpClient)
      */
     @Deprecated
     public DockerClientBuilder withDockerCmdExecFactory(DockerCmdExecFactory dockerCmdExecFactory) {
@@ -74,7 +74,7 @@ public class DockerClientBuilder {
     }
 
     /**
-     * Note that this method overrides {@link DockerCmdExecFactory} if it was previously set
+     * Note that this method overrides DockerCmdExecFactory if it was previously set
      */
     public DockerClientBuilder withDockerHttpClient(DockerHttpClient dockerHttpClient) {
         this.dockerCmdExecFactory = null;

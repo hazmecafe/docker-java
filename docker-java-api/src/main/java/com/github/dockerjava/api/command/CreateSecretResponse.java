@@ -6,7 +6,7 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 /**
- * The response of a {@link CreateSecretCmd}
+ * The response of a CreateSecretCmd
  */
 @EqualsAndHashCode
 @ToString

@@ -33,7 +33,7 @@ public class Container extends DockerObject implements Serializable {
     private String image;
 
     /**
-     * @since since {@link RemoteApiVersion#VERSION_1_21}
+     * @since since RemoteApiVersion#VERSION_1_21
      */
     @JsonProperty("ImageID")
     private String imageId;
@@ -51,27 +51,27 @@ public class Container extends DockerObject implements Serializable {
     private String status;
 
     /**
-     * @since ~{@link RemoteApiVersion#VERSION_1_23}
+     * @since ~RemoteApiVersion#VERSION_1_23
      */
     @JsonProperty("State")
     private String state;
 
     /**
-     * @since ~{@link RemoteApiVersion#VERSION_1_19}
+     * @since ~RemoteApiVersion#VERSION_1_19
      */
     @JsonProperty("SizeRw")
     private Long sizeRw;
 
     /**
-     * Returns only when {@link ListContainersCmd#withShowSize(java.lang.Boolean)} set
+     * Returns only when ListContainersCmd#withShowSize(java.lang.Boolean) set
      *
-     * @since ~{@link RemoteApiVersion#VERSION_1_19}
+     * @since ~RemoteApiVersion#VERSION_1_19
      */
     @JsonProperty("SizeRootFs")
     private Long sizeRootFs;
 
     /**
-     * @since ~{@link RemoteApiVersion#VERSION_1_20}
+     * @since ~RemoteApiVersion#VERSION_1_20
      */
     @JsonProperty("HostConfig")
     private ContainerHostConfig hostConfig;
@@ -80,13 +80,13 @@ public class Container extends DockerObject implements Serializable {
      * Docker API docs says "list of networks", but json names `networkSettings`.
      * So, reusing existed NetworkSettings model object.
      *
-     * @since ~{@link RemoteApiVersion#VERSION_1_22}
+     * @since ~RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("NetworkSettings")
     private ContainerNetworkSettings networkSettings;
 
     /**
-     * @since ~{@link RemoteApiVersion#VERSION_1_23}
+     * @since ~RemoteApiVersion#VERSION_1_23
      */
     @JsonProperty("Mounts")
     private List<ContainerMount> mounts;

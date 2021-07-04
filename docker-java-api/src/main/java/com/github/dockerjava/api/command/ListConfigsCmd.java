@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * Command to list all configs in a docker swarm. Only applicable if docker runs in swarm mode.
  *
- * @since {@link RemoteApiVersion#VERSION_1_30}
+ * @since RemoteApiVersion#VERSION_1_30
  */
 public interface ListConfigsCmd extends SyncDockerCmd<List<Config>> {
 

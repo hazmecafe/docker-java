@@ -231,7 +231,7 @@ public class AttachContainerCmdIT extends CmdIT {
     }
 
     /**
-     * {@link ResultCallback#onComplete()} should be called immediately after
+     * ResultCallback#onComplete() should be called immediately after
      * container exit. It was broken for Netty and TLS connection.
      */
     @Test

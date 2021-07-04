@@ -16,7 +16,7 @@ import com.github.dockerjava.api.model.StreamType;
  *
  * https://docs.docker.com/engine/reference/api/docker_remote_api_v1.21/#attach-to-a-container
  *
- * It drives the {@link ResultCallback#onNext(Object)} method of the passed {@link ResultCallback}.
+ * It drives the ResultCallback#onNext(Object) method of the passed ResultCallback.
  *
  * @author Marcus Linke
  */

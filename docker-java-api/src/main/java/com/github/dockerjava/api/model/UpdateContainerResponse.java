@@ -10,7 +10,7 @@ import java.util.List;
  * @see com.github.dockerjava.api.command.UpdateContainerCmd
  * @see <a href="https://docs.docker.com/engine/reference/api/docker_remote_api_v1.22/">
  * https://docs.docker.com/engine/reference/api/docker_remote_api_v1.22/</a>
- * @since {@link RemoteApiVersion#VERSION_1_22}
+ * @since RemoteApiVersion#VERSION_1_22
  */
 public class UpdateContainerResponse extends ResponseItem {
     private static final long serialVersionUID = 1L;

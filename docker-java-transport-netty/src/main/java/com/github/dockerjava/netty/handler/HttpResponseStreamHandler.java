@@ -10,7 +10,7 @@ import java.io.InputStream;
 import com.github.dockerjava.api.async.ResultCallback;
 
 /**
- * Handler that converts an incoming byte stream to an {@link InputStream}.
+ * Handler that converts an incoming byte stream to an InputStream.
  *
  * @author marcus
  */

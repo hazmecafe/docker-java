@@ -29,7 +29,7 @@ public class Volume implements Serializable {
      * Handles the {@code { "Destination" : { "path" : "/path/to/mount" } }} variant.
      * @param path the destination path of the bind mounted volume
      * @return a volume instance referring to the given path.
-     * @deprecated use {@link #parse(Map)}
+     * @deprecated use #parse(Map)
      */
     @Nonnull
     @Deprecated

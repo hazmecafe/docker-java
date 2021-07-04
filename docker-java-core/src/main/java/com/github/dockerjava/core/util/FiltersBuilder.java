@@ -91,7 +91,7 @@ public class FiltersBuilder {
      * Filter by labels
      *
      * @param labels
-     *            {@link Map} of labels that contains label keys and values
+     *            Map of labels that contains label keys and values
      */
     public FiltersBuilder withLabels(Map<String, String> labels) {
         withFilter("label", labelsMapToList(labels).toArray(new String[labels.size()]));

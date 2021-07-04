@@ -50,8 +50,8 @@ class FileDescriptor {
     }
 
     /**
-     * Acquire an instance of the actual {@link Handle}. The caller must
-     * {@link Handle#close() close} the resulting handle when done.
+     * Acquire an instance of the actual Handle. The caller must
+     * Handle#close() close the resulting handle when done.
      * @return the handle
      */
     synchronized Handle acquire() {

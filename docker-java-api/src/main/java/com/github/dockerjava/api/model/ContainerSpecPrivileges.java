@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * Security options for the container
  *
- * @since {@link RemoteApiVersion#VERSION_1_29}
+ * @since RemoteApiVersion#VERSION_1_29
  */
 @EqualsAndHashCode
 @ToString

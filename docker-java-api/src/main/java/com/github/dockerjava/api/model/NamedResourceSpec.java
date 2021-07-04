@@ -3,7 +3,7 @@ package com.github.dockerjava.api.model;
 import java.io.Serializable;
 
 /**
- * @since {@link RemoteApiVersion#VERSION_1_24}
+ * @since RemoteApiVersion#VERSION_1_24
  */
 @Deprecated
 public class NamedResourceSpec extends GenericResource<Integer> implements Serializable {

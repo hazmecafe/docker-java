@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @since ~{@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20}
+ * @since ~com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20
  */
 @EqualsAndHashCode
 @ToString
@@ -78,7 +78,7 @@ public final class InfoRegistryConfig extends DockerObject implements Serializab
     }
 
     /**
-     * @since ~{@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20}
+     * @since ~com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20
      */
     @EqualsAndHashCode
     @ToString

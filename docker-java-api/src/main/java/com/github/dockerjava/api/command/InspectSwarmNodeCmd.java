@@ -10,7 +10,7 @@ import javax.annotation.Nonnull;
 /**
  * Inspect a swarmNode.
  *
- * @since {@link RemoteApiVersion#VERSION_1_24}
+ * @since RemoteApiVersion#VERSION_1_24
  */
 public interface InspectSwarmNodeCmd extends SyncDockerCmd<SwarmNode> {
 

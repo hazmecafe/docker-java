@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
  *
  * @author Marcus Linke
  *
- * @deprecated use {@link com.github.dockerjava.api.command.PullImageResultCallback}
+ * @deprecated use com.github.dockerjava.api.command.PullImageResultCallback
  */
 @Deprecated
 public class PullImageResultCallback extends ResultCallbackTemplate<PullImageResultCallback, PullResponseItem> {
@@ -117,7 +117,7 @@ public class PullImageResultCallback extends ResultCallbackTemplate<PullImageRes
     /**
      * Awaits the image to be pulled successful.
      *
-     * @deprecated use {@link #awaitCompletion()} or {@link #awaitCompletion(long, TimeUnit)} instead
+     * @deprecated use #awaitCompletion() or #awaitCompletion(long, TimeUnit) instead
      * @throws DockerClientException
      *             if the pull fails.
      */

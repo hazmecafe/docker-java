@@ -6,7 +6,7 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 /**
- * The response of a {@link CreateServiceCmd}
+ * The response of a CreateServiceCmd
  */
 @EqualsAndHashCode
 @ToString

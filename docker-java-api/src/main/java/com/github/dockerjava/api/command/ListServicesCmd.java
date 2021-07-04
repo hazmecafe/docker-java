@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * Command to list all services in a docker swarm. Only applicable if docker runs in swarm mode.
  *
- * @since {@link RemoteApiVersion#VERSION_1_24}
+ * @since RemoteApiVersion#VERSION_1_24
  */
 public interface ListServicesCmd extends SyncDockerCmd<List<Service>> {
 
@@ -27,7 +27,7 @@ public interface ListServicesCmd extends SyncDockerCmd<List<Service>> {
     ListServicesCmd withNameFilter(List<String> names);
 
     /**
-     * @param labels - Show only services with the passed labels. Labels is a {@link Map} that contains label keys and values
+     * @param labels - Show only services with the passed labels. Labels is a Map that contains label keys and values
      */
     ListServicesCmd withLabelFilter(Map<String, String> labels);
 

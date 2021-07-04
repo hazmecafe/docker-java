@@ -31,7 +31,7 @@ public class Statistics extends DockerObject implements Serializable {
     private Map<String, StatisticNetworksConfig> networks;
 
     /**
-     * @deprecated as of Docker Remote API 1.21, replaced by {@link #networks}
+     * @deprecated as of Docker Remote API 1.21, replaced by #networks
      */
     @Deprecated
     @JsonProperty("network")
@@ -78,7 +78,7 @@ public class Statistics extends DockerObject implements Serializable {
     }
 
     /**
-     * @deprecated as of Docker Remote API 1.21, replaced by {@link #getNetworks()}
+     * @deprecated as of Docker Remote API 1.21, replaced by #getNetworks()
      */
     @Deprecated
     public Map<String, StatisticNetworksConfig> getNetwork() {
@@ -95,7 +95,7 @@ public class Statistics extends DockerObject implements Serializable {
 
     /**
      * The cpu statistic of last read, which is used for calculating the cpu usage percent.
-     * It is not the exact copy of the {@link #getCpuStats()}.
+     * It is not the exact copy of the #getCpuStats().
      */
     public CpuStatsConfig getPreCpuStats() {
         return preCpuStats;

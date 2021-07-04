@@ -126,7 +126,7 @@ public interface DockerClient extends Closeable {
      * @param imageStream
      *            stream of the tarball file
      * @return created command
-     * @since {@link RemoteApiVersion#VERSION_1_7}
+     * @since RemoteApiVersion#VERSION_1_7
      */
     LoadImageCmd loadImageCmd(@Nonnull InputStream imageStream);
 
@@ -159,11 +159,11 @@ public interface DockerClient extends Closeable {
     CreateContainerCmd createContainerCmd(@Nonnull String image);
 
     /**
-     * Creates a new {@link StartContainerCmd} for the container with the given ID. The command can then be further customized by using
-     * builder methods on it like {@link StartContainerCmd#withDns(String...)}.
+     * Creates a new StartContainerCmd for the container with the given ID. The command can then be further customized by using
+     * builder methods on it like StartContainerCmd#withDns(String...).
      * <p>
      * <b>If you customize the command, any existing configuration of the target container will get reset to its default before applying the
-     * new configuration. To preserve the existing configuration, use an unconfigured {@link StartContainerCmd}.</b>
+     * new configuration. To preserve the existing configuration, use an unconfigured StartContainerCmd.</b>
      * <p>
      * This command corresponds to the <code>/containers/{id}/start</code> endpoint of the Docker Remote API.
      */
@@ -195,7 +195,7 @@ public interface DockerClient extends Closeable {
      * @param resource
      *            path to container's resource
      * @return created command
-     * @since {@link RemoteApiVersion#VERSION_1_20}
+     * @since RemoteApiVersion#VERSION_1_20
      */
     CopyArchiveFromContainerCmd copyArchiveFromContainerCmd(@Nonnull String containerId, @Nonnull String resource);
 
@@ -208,7 +208,7 @@ public interface DockerClient extends Closeable {
      *            path to container's resource
      * @return created command
      * @see #copyArchiveFromContainerCmd(String, String)
-     * @deprecated since docker API version 1.20, replaced by {@link #copyArchiveFromContainerCmd(String, String)}
+     * @deprecated since docker API version 1.20, replaced by #copyArchiveFromContainerCmd(String, String)
      * since 1.24 fails.
      */
     @Deprecated
@@ -220,7 +220,7 @@ public interface DockerClient extends Closeable {
      * @param containerId
      *            id of the container
      * @return created command
-     * @since {@link RemoteApiVersion#VERSION_1_20}
+     * @since RemoteApiVersion#VERSION_1_20
      */
     CopyArchiveToContainerCmd copyArchiveToContainerCmd(@Nonnull String containerId);
 
@@ -235,7 +235,7 @@ public interface DockerClient extends Closeable {
      *
      * @param containerId id of the container
      * @return command
-     * @since {@link RemoteApiVersion#VERSION_1_22}
+     * @since RemoteApiVersion#VERSION_1_22
      */
     UpdateContainerCmd updateContainerCmd(@Nonnull String containerId);
 
@@ -244,7 +244,7 @@ public interface DockerClient extends Closeable {
      *
      * @param containerId id of the container
      * @return command
-     * @since {@link RemoteApiVersion#VERSION_1_17}
+     * @since RemoteApiVersion#VERSION_1_17
      */
     RenameContainerCmd renameContainerCmd(@Nonnull String containerId);
 
@@ -353,7 +353,7 @@ public interface DockerClient extends Closeable {
     /**
      * Command to list all services in a docker swarm. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_24}
+     * @since RemoteApiVersion#VERSION_1_24
      * @return command
      */
     ListServicesCmd listServicesCmd();
@@ -361,7 +361,7 @@ public interface DockerClient extends Closeable {
     /**
      * Command to create a service in a docker swarm. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_24}
+     * @since RemoteApiVersion#VERSION_1_24
      * @param serviceSpec the service specification
      * @return command
      */
@@ -416,14 +416,14 @@ public interface DockerClient extends Closeable {
     /**
      * Command to delete unused containers/images/networks/volumes
      *
-     * @since {@link RemoteApiVersion#VERSION_1_25}
+     * @since RemoteApiVersion#VERSION_1_25
      */
     PruneCmd pruneCmd(PruneType pruneType);
 
     /**
      *  Command to list all secrets. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_25}
+     * @since RemoteApiVersion#VERSION_1_25
      * @return command
      */
     ListSecretsCmd listSecretsCmd();
@@ -431,7 +431,7 @@ public interface DockerClient extends Closeable {
     /**
      * Command to create a secret in a docker swarm. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_25}
+     * @since RemoteApiVersion#VERSION_1_25
      * @param secretSpec the secret specification
      * @return command
      */
@@ -440,7 +440,7 @@ public interface DockerClient extends Closeable {
     /**
      * Command to remove a secret
      *
-     * @since {@link RemoteApiVersion#VERSION_1_25}
+     * @since RemoteApiVersion#VERSION_1_25
      * @param secretId secret id or secret name
      * @return command
      */
@@ -450,7 +450,7 @@ public interface DockerClient extends Closeable {
     /**
      *  Command to list all configs. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_30}
+     * @since RemoteApiVersion#VERSION_1_30
      * @return command
      */
     ListConfigsCmd listConfigsCmd();
@@ -458,7 +458,7 @@ public interface DockerClient extends Closeable {
     /**
      * Command to create a config in a docker swarm. Only applicable if docker runs in swarm mode.
      *
-     * @since {@link RemoteApiVersion#VERSION_1_30}
+     * @since RemoteApiVersion#VERSION_1_30
      * @return command
      */
     CreateConfigCmd createConfigCmd();
@@ -466,7 +466,7 @@ public interface DockerClient extends Closeable {
     /**
      * Command to inspect a service
      *
-     * @since {@link RemoteApiVersion#VERSION_1_30}
+     * @since RemoteApiVersion#VERSION_1_30
      * @param configId config id or config name
      * @return command
      */
@@ -474,7 +474,7 @@ public interface DockerClient extends Closeable {
 
     /**
      * Command to remove a config
-     * @since {@link RemoteApiVersion#VERSION_1_30}
+     * @since RemoteApiVersion#VERSION_1_30
      * @param configId config id or config name
      * @return command
      */

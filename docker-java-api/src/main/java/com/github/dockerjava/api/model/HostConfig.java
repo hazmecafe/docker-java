@@ -35,37 +35,37 @@ public class HostConfig extends DockerObject implements Serializable {
     private Integer blkioWeight;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("BlkioWeightDevice")
     private List<BlkioWeightDevice> blkioWeightDevice;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("BlkioDeviceReadBps")
     private List<BlkioRateDevice> blkioDeviceReadBps;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("BlkioDeviceWriteBps")
     private List<BlkioRateDevice> blkioDeviceWriteBps;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("BlkioDeviceReadIOps")
     private List<BlkioRateDevice> blkioDeviceReadIOps;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("BlkioDeviceWriteIOps")
     private List<BlkioRateDevice> blkioDeviceWriteIOps;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20
      */
     @JsonProperty("MemorySwappiness")
     private Long memorySwappiness;
@@ -95,7 +95,7 @@ public class HostConfig extends DockerObject implements Serializable {
     private Integer cpuShares;
 
     /**
-     * @since ~{@link RemoteApiVersion#VERSION_1_20}
+     * @since ~RemoteApiVersion#VERSION_1_20
      */
     @JsonProperty("CpuQuota")
     private Long cpuQuota;
@@ -113,13 +113,13 @@ public class HostConfig extends DockerObject implements Serializable {
     private List<String> deviceCgroupRules;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_40}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_40
      */
     @JsonProperty("DeviceRequests")
     private List<DeviceRequest> deviceRequests;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_25}
+     * @since RemoteApiVersion#VERSION_1_25
      */
     @JsonProperty("DiskQuota")
     private Long diskQuota;
@@ -161,13 +161,13 @@ public class HostConfig extends DockerObject implements Serializable {
     private Long memorySwap;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     @JsonProperty("MemoryReservation")
     private Long memoryReservation;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     @JsonProperty("KernelMemory")
     private Long kernelMemory;
@@ -182,13 +182,13 @@ public class HostConfig extends DockerObject implements Serializable {
     private Boolean init;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_25}
+     * @since RemoteApiVersion#VERSION_1_25
      */
     @JsonProperty("AutoRemove")
     private Boolean autoRemove;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_22}
+     * @since RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("OomScoreAdj")
     private Integer oomScoreAdj;
@@ -236,7 +236,7 @@ public class HostConfig extends DockerObject implements Serializable {
     private Isolation isolation;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_20}
+     * @since RemoteApiVersion#VERSION_1_20
      */
     @JsonProperty("SecurityOpt")
     private List<String> securityOpts;
@@ -245,37 +245,37 @@ public class HostConfig extends DockerObject implements Serializable {
     private Map<String, String> storageOpt;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_20}
+     * @since RemoteApiVersion#VERSION_1_20
      */
     @JsonProperty("CgroupParent")
     private String cgroupParent;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_21}
+     * @since RemoteApiVersion#VERSION_1_21
      */
     @JsonProperty("VolumeDriver")
     private String volumeDriver;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_22}
+     * @since RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("ShmSize")
     private Long shmSize;
 
     /**
-     * @since ~{@link RemoteApiVersion#VERSION_1_23}
+     * @since ~RemoteApiVersion#VERSION_1_23
      */
     @JsonProperty("PidsLimit")
     private Long pidsLimit;
 
     /**
-     * @since ~{@link RemoteApiVersion#VERSION_1_30}
+     * @since ~RemoteApiVersion#VERSION_1_30
      */
     @JsonProperty("Runtime")
     private String runtime;
 
     /**
-     * @since ~{@link RemoteApiVersion#VERSION_1_22}
+     * @since ~RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("Tmpfs")
     private Map<String, String> tmpFs;
@@ -887,7 +887,7 @@ public class HostConfig extends DockerObject implements Serializable {
     }
 
     /**
-     * Add one or more {@link PortBinding}s. This corresponds to the <code>--publish</code> (<code>-p</code>) option of the
+     * Add one or more PortBindings. This corresponds to the <code>--publish</code> (<code>-p</code>) option of the
      * <code>docker run</code> CLI command.
      */
     public HostConfig withPortBindings(Ports portBindings) {
@@ -955,7 +955,7 @@ public class HostConfig extends DockerObject implements Serializable {
     }
 
     /**
-     * Set custom {@link RestartPolicy} for the container. Defaults to {@link RestartPolicy#noRestart()}
+     * Set custom RestartPolicy for the container. Defaults to RestartPolicy#noRestart()
      */
     public HostConfig withRestartPolicy(RestartPolicy restartPolicy) {
         this.restartPolicy = restartPolicy;

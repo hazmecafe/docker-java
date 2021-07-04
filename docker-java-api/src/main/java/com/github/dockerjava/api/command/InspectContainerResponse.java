@@ -52,7 +52,7 @@ public class InspectContainerResponse extends DockerObject {
     private String hostsPath;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_17}
+     * @since RemoteApiVersion#VERSION_1_17
      */
     @JsonProperty("LogPath")
     private String logPath;
@@ -73,7 +73,7 @@ public class InspectContainerResponse extends DockerObject {
     private String name;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_17}
+     * @since RemoteApiVersion#VERSION_1_17
      */
     @JsonProperty("RestartCount")
     private Integer restartCount;
@@ -112,7 +112,7 @@ public class InspectContainerResponse extends DockerObject {
     private GraphDriver graphDriver;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_30}
+     * @since RemoteApiVersion#VERSION_1_30
      */
     @JsonProperty("Platform")
     private String platform;
@@ -167,7 +167,7 @@ public class InspectContainerResponse extends DockerObject {
     }
 
     /**
-     * @deprecated As of {@link RemoteApiVersion#VERSION_1_20} use {@link #getMounts()} instead
+     * @deprecated As of RemoteApiVersion#VERSION_1_20 use #getMounts() instead
      */
     @JsonIgnore
     @Deprecated
@@ -214,7 +214,7 @@ public class InspectContainerResponse extends DockerObject {
     }
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_20}
+     * @since RemoteApiVersion#VERSION_1_20
      */
     @CheckForNull
     public List<Mount> getMounts() {
@@ -255,35 +255,35 @@ public class InspectContainerResponse extends DockerObject {
     public class ContainerState extends DockerObject {
 
         /**
-         * @since {@link RemoteApiVersion#VERSION_1_20}
+         * @since RemoteApiVersion#VERSION_1_20
          */
         @CheckForNull
         @JsonProperty("Status")
         private String status;
 
         /**
-         * @since < {@link RemoteApiVersion#VERSION_1_16}
+         * @since < RemoteApiVersion#VERSION_1_16
          */
         @CheckForNull
         @JsonProperty("Running")
         private Boolean running;
 
         /**
-         * @since {@link RemoteApiVersion#VERSION_1_17}
+         * @since RemoteApiVersion#VERSION_1_17
          */
         @CheckForNull
         @JsonProperty("Paused")
         private Boolean paused;
 
         /**
-         * @since {@link RemoteApiVersion#VERSION_1_17}
+         * @since RemoteApiVersion#VERSION_1_17
          */
         @CheckForNull
         @JsonProperty("Restarting")
         private Boolean restarting;
 
         /**
-         * @since {@link RemoteApiVersion#VERSION_1_17}
+         * @since RemoteApiVersion#VERSION_1_17
          */
         @CheckForNull
         @JsonProperty("OOMKilled")
@@ -292,42 +292,42 @@ public class InspectContainerResponse extends DockerObject {
         /**
          * <a href="https://github.com/docker/docker/pull/18127">Unclear</a>
          *
-         * @since {@link RemoteApiVersion#UNKNOWN_VERSION}
+         * @since RemoteApiVersion#UNKNOWN_VERSION
          */
         @CheckForNull
         @JsonProperty("Dead")
         private Boolean dead;
 
         /**
-         * @since < {@link RemoteApiVersion#VERSION_1_16}
+         * @since < RemoteApiVersion#VERSION_1_16
          */
         @CheckForNull
         @JsonProperty("Pid")
         private Long pid;
 
         /**
-         * @since < {@link RemoteApiVersion#VERSION_1_16}
+         * @since < RemoteApiVersion#VERSION_1_16
          */
         @CheckForNull
         @JsonProperty("ExitCode")
         private Long exitCode;
 
         /**
-         * @since {@link RemoteApiVersion#VERSION_1_17}
+         * @since RemoteApiVersion#VERSION_1_17
          */
         @CheckForNull
         @JsonProperty("Error")
         private String error;
 
         /**
-         * @since < {@link RemoteApiVersion#VERSION_1_16}
+         * @since < RemoteApiVersion#VERSION_1_16
          */
         @CheckForNull
         @JsonProperty("StartedAt")
         private String startedAt;
 
         /**
-         * @since {@link RemoteApiVersion#VERSION_1_17}
+         * @since RemoteApiVersion#VERSION_1_17
          */
         @CheckForNull
         @JsonProperty("FinishedAt")
@@ -341,7 +341,7 @@ public class InspectContainerResponse extends DockerObject {
         private HealthState health;
 
         /**
-         * See {@link #status}
+         * See #status
          */
         @CheckForNull
         public String getStatus() {
@@ -349,7 +349,7 @@ public class InspectContainerResponse extends DockerObject {
         }
 
         /**
-         * See {@link #running}
+         * See #running
          */
         @CheckForNull
         public Boolean getRunning() {
@@ -357,7 +357,7 @@ public class InspectContainerResponse extends DockerObject {
         }
 
         /**
-         * See {@link #paused}
+         * See #paused
          */
         @CheckForNull
         public Boolean getPaused() {
@@ -365,7 +365,7 @@ public class InspectContainerResponse extends DockerObject {
         }
 
         /**
-         * See {@link #restarting}
+         * See #restarting
          */
         @CheckForNull
         public Boolean getRestarting() {
@@ -373,7 +373,7 @@ public class InspectContainerResponse extends DockerObject {
         }
 
         /**
-         * See {@link #oomKilled}
+         * See #oomKilled
          */
         @CheckForNull
         public Boolean getOOMKilled() {
@@ -381,7 +381,7 @@ public class InspectContainerResponse extends DockerObject {
         }
 
         /**
-         * See {@link #dead}
+         * See #dead
          */
         @CheckForNull
         public Boolean getDead() {
@@ -389,9 +389,9 @@ public class InspectContainerResponse extends DockerObject {
         }
 
         /**
-         * See {@link #pid}
+         * See #pid
          *
-         * @deprecated use {@link #getPidLong()}
+         * @deprecated use #getPidLong()
          */
         @Deprecated
         @CheckForNull
@@ -400,7 +400,7 @@ public class InspectContainerResponse extends DockerObject {
         }
 
         /**
-         * See {@link #pid}
+         * See #pid
          */
         @CheckForNull
         public Long getPidLong() {
@@ -408,9 +408,9 @@ public class InspectContainerResponse extends DockerObject {
         }
 
         /**
-         * See {@link #exitCode}
+         * See #exitCode
          *
-         * @deprecated use {@link #getExitCodeLong()}
+         * @deprecated use #getExitCodeLong()
          */
         @Deprecated
         @CheckForNull
@@ -419,7 +419,7 @@ public class InspectContainerResponse extends DockerObject {
         }
 
         /**
-         * See {@link #exitCode}
+         * See #exitCode
          */
         @CheckForNull
         public Long getExitCodeLong() {
@@ -427,7 +427,7 @@ public class InspectContainerResponse extends DockerObject {
         }
 
         /**
-         * See {@link #error}
+         * See #error
          */
         @CheckForNull
         public String getError() {
@@ -435,7 +435,7 @@ public class InspectContainerResponse extends DockerObject {
         }
 
         /**
-         * See {@link #startedAt}
+         * See #startedAt
          */
         @CheckForNull
         public String getStartedAt() {
@@ -443,7 +443,7 @@ public class InspectContainerResponse extends DockerObject {
         }
 
         /**
-         * See {@link #finishedAt}
+         * See #finishedAt
          */
         @CheckForNull
         public String getFinishedAt() {
@@ -460,42 +460,42 @@ public class InspectContainerResponse extends DockerObject {
     public static class Mount extends DockerObject {
 
         /**
-         * @since {@link RemoteApiVersion#VERSION_1_20}
+         * @since RemoteApiVersion#VERSION_1_20
          */
         @CheckForNull
         @JsonProperty("Name")
         private String name;
 
         /**
-         * @since {@link RemoteApiVersion#VERSION_1_20}
+         * @since RemoteApiVersion#VERSION_1_20
          */
         @CheckForNull
         @JsonProperty("Source")
         private String source;
 
         /**
-         * @since {@link RemoteApiVersion#VERSION_1_20}
+         * @since RemoteApiVersion#VERSION_1_20
          */
         @CheckForNull
         @JsonProperty("Destination")
         private Volume destination;
 
         /**
-         * @since {@link RemoteApiVersion#VERSION_1_20}
+         * @since RemoteApiVersion#VERSION_1_20
          */
         @CheckForNull
         @JsonProperty("Driver")
         private String driver;
 
         /**
-         * @since {@link RemoteApiVersion#VERSION_1_20}
+         * @since RemoteApiVersion#VERSION_1_20
          */
         @CheckForNull
         @JsonProperty("Mode")
         private String mode;
 
         /**
-         * @since {@link RemoteApiVersion#VERSION_1_20}
+         * @since RemoteApiVersion#VERSION_1_20
          */
         @CheckForNull
         @JsonProperty("RW")

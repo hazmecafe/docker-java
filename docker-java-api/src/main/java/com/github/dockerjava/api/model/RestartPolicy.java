@@ -87,11 +87,11 @@ public class RestartPolicy extends DockerObject implements Serializable {
     }
 
     /**
-     * Parses a textual restart polixy specification (as used by the Docker CLI) to a {@link RestartPolicy}.
+     * Parses a textual restart polixy specification (as used by the Docker CLI) to a RestartPolicy.
      *
      * @param serialized
      *            the specification, e.g. <code>on-failure:2</code>
-     * @return a {@link RestartPolicy} matching the specification
+     * @return a RestartPolicy matching the specification
      * @throws IllegalArgumentException
      *             if the specification cannot be parsed
      */
@@ -125,10 +125,10 @@ public class RestartPolicy extends DockerObject implements Serializable {
     }
 
     /**
-     * Returns a string representation of this {@link RestartPolicy}. The format is <code>name[:count]</code>, like the argument in
-     * {@link #parse(String)}.
+     * Returns a string representation of this RestartPolicy. The format is <code>name[:count]</code>, like the argument in
+     * #parse(String).
      *
-     * @return a string representation of this {@link RestartPolicy}
+     * @return a string representation of this RestartPolicy
      */
     @Override
     public String toString() {

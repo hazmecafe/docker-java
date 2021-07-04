@@ -10,9 +10,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * The specification for containers as used in {@link TaskSpec}
+ * The specification for containers as used in TaskSpec
  *
- * @since {@link RemoteApiVersion#VERSION_1_24}
+ * @since RemoteApiVersion#VERSION_1_24
  */
 @EqualsAndHashCode
 @ToString

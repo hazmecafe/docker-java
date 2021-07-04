@@ -7,7 +7,7 @@ import javax.annotation.Nonnull;
 
 /**
  * @author Kanstantsin Shautsou
- * @since {@link RemoteApiVersion#VERSION_1_22}
+ * @since RemoteApiVersion#VERSION_1_22
  */
 public interface UpdateContainerCmd extends SyncDockerCmd<UpdateContainerResponse> {
     @CheckForNull

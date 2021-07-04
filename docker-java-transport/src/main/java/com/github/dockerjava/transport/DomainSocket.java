@@ -28,7 +28,7 @@ import com.sun.jna.Native;
 import com.sun.jna.Platform;
 
 /**
- * A {@link Socket} implementation for Linux of BSD domain sockets.
+ * A Socket implementation for Linux of BSD domain sockets.
  *
  * @author Phillip Webb
  */
@@ -126,9 +126,9 @@ public abstract class DomainSocket extends AbstractSocket {
     private native int close(int fd) throws LastErrorException;
 
     /**
-     * Return a new {@link DomainSocket} for the given path.
+     * Return a new DomainSocket for the given path.
      * @param path the path to the domain socket
-     * @return a {@link DomainSocket} instance
+     * @return a DomainSocket instance
      * @throws IOException if the socket cannot be opened
      */
     public static DomainSocket get(String path) throws IOException {
@@ -143,7 +143,7 @@ public abstract class DomainSocket extends AbstractSocket {
     }
 
     /**
-     * {@link InputStream} returned from the {@link DomainSocket}.
+     * InputStream returned from the DomainSocket.
      */
     private class DomainSocketInputStream extends InputStream {
 
@@ -166,7 +166,7 @@ public abstract class DomainSocket extends AbstractSocket {
     }
 
     /**
-     * {@link OutputStream} returned from the {@link DomainSocket}.
+     * OutputStream returned from the DomainSocket.
      */
     private class DomainSocketOutputStream extends OutputStream {
 

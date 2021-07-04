@@ -53,7 +53,7 @@ public interface DockerClientConfig {
     AuthConfigurations getAuthConfigurations();
 
     /**
-     * Returns an {@link SSLConfig} when secure connection is configured or null if not.
+     * Returns an SSLConfig when secure connection is configured or null if not.
      */
     SSLConfig getSSLConfig();
 

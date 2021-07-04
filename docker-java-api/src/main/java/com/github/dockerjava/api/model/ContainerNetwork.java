@@ -39,7 +39,7 @@ public class ContainerNetwork extends DockerObject implements Serializable {
      * Add network-scoped alias for the container
      * Type picked from `docker/vendor/src/github.com/docker/engine-api/types/network/network.go`
      *
-     * @since {@link RemoteApiVersion#VERSION_1_22}
+     * @since RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("Aliases")
     private List<String> aliases;

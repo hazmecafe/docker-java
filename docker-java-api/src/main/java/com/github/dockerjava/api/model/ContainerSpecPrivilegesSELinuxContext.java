@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * SELinux labels of the container
  *
- * @since {@link RemoteApiVersion#VERSION_1_29}
+ * @since RemoteApiVersion#VERSION_1_29
  */
 @EqualsAndHashCode
 @ToString

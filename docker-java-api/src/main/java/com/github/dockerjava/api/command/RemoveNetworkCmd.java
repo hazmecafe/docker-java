@@ -8,7 +8,7 @@ import javax.annotation.Nonnull;
 /**
  * Remove a network.
  *
- * @since {@link RemoteApiVersion#VERSION_1_21}
+ * @since RemoteApiVersion#VERSION_1_21
  */
 public interface RemoveNetworkCmd extends SyncDockerCmd<Void> {
 

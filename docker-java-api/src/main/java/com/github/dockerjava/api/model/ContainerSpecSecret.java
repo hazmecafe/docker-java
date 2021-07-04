@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * docker secrets that will be exposed to the service
  *
- * @since {@link RemoteApiVersion#VERSION_1_26}
+ * @since RemoteApiVersion#VERSION_1_26
  */
 @EqualsAndHashCode
 @ToString

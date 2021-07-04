@@ -49,7 +49,7 @@ public class InspectImageResponse extends DockerObject {
     private String os;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_25}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_25
      */
     @JsonProperty("OsVersion")
     private String osVersion;
@@ -67,13 +67,13 @@ public class InspectImageResponse extends DockerObject {
     private List<String> repoDigests;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21
      */
     @JsonProperty("VirtualSize")
     private Long virtualSize;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21
      */
     @JsonProperty("GraphDriver")
     private GraphDriver graphDriver;

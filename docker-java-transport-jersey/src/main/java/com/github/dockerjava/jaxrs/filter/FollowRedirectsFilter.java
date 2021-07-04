@@ -13,7 +13,7 @@ import javax.ws.rs.core.Response;
  * PUT imposed by the HTTP specification. 302 Moved Temporarily, 301 Moved Permanently and 307 Temporary Redirect status codes will result
  * in an automatic redirect of HEAD and GET methods only.
  *
- * {@link org.apache.http.impl.client.DefaultRedirectStrategy}
+ * org.apache.http.impl.client.DefaultRedirectStrategy
  *
  * This filter allows arbitrary redirection for other methods.
  */

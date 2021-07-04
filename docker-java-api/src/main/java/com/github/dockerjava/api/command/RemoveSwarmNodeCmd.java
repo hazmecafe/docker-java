@@ -8,7 +8,7 @@ import javax.annotation.Nonnull;
 /**
  * Remove a swarmNode.
  *
- * @since {@link RemoteApiVersion#VERSION_1_24}
+ * @since RemoteApiVersion#VERSION_1_24
  */
 public interface RemoveSwarmNodeCmd extends SyncDockerCmd<Void> {
 

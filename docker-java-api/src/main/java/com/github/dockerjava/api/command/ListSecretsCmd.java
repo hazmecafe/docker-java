@@ -25,7 +25,7 @@ public interface ListSecretsCmd extends SyncDockerCmd<List<Secret>> {
     ListSecretsCmd withNameFilter(List<String> names);
 
     /**
-     * @param labels - Show only secrets with the passed labels. Labels is a {@link Map} that contains label keys and values
+     * @param labels - Show only secrets with the passed labels. Labels is a Map that contains label keys and values
      */
     ListSecretsCmd withLabelFilter(Map<String, String> labels);
 

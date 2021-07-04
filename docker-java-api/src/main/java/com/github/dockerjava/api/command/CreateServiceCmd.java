@@ -9,7 +9,7 @@ import javax.annotation.CheckForNull;
 /**
  * Command to create a new service
  *
- * @since {@link RemoteApiVersion#VERSION_1_24}
+ * @since RemoteApiVersion#VERSION_1_24
  */
 public interface CreateServiceCmd extends SyncDockerCmd<CreateServiceResponse> {
 

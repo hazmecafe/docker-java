@@ -10,7 +10,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.dockerjava.api.async.ResultCallback;
 
 /**
- * Handler that decodes an incoming byte stream into objects of T and calls {@link ResultCallback#onNext(Object)}
+ * Handler that decodes an incoming byte stream into objects of T and calls ResultCallback#onNext(Object)
  *
  * @author Marcus Linke
  */

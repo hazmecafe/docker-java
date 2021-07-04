@@ -9,7 +9,7 @@ import javax.annotation.CheckForNull;
 import java.util.List;
 
 /**
- * Part of {@link InspectImageResponse}
+ * Part of InspectImageResponse
  *
  * @author Dmitry Tretyakov
  */

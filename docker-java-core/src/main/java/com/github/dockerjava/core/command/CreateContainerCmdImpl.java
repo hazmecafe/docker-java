@@ -102,7 +102,7 @@ public class CreateContainerCmdImpl extends AbstrDockerCmd<CreateContainerCmd, C
     private ExposedPorts exposedPorts = new ExposedPorts();
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21
      */
     @JsonProperty("StopSignal")
     private String stopSignal;

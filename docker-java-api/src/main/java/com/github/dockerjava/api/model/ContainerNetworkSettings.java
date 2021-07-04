@@ -8,10 +8,10 @@ import java.io.Serializable;
 import java.util.Map;
 
 /**
- * Sub-object in {@link Container}
+ * Sub-object in Container
  *
  * @see Container
- * @since {@link RemoteApiVersion#VERSION_1_22}
+ * @since RemoteApiVersion#VERSION_1_22
  */
 @EqualsAndHashCode
 @ToString
@@ -19,7 +19,7 @@ public class ContainerNetworkSettings extends DockerObject implements Serializab
     private static final long serialVersionUID = 1L;
 
     /**
-     * @since {@link RemoteApiVersion#VERSION_1_22}
+     * @since RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("Networks")
     private Map<String, ContainerNetwork> networks;

@@ -24,15 +24,15 @@ public enum InternetProtocol {
     SCTP;
 
     /**
-     * The default {@link InternetProtocol}: {@link #TCP}
+     * The default InternetProtocol: #TCP
      */
     public static final InternetProtocol DEFAULT = TCP;
 
     /**
-     * Returns a string representation of this {@link InternetProtocol} suitable for inclusion in a JSON message. The output is the
+     * Returns a string representation of this InternetProtocol suitable for inclusion in a JSON message. The output is the
      * lowercased name of the Protocol, e.g. <code>tcp</code>.
      *
-     * @return a string representation of this {@link InternetProtocol}
+     * @return a string representation of this InternetProtocol
      */
     @Override
     public String toString() {
@@ -40,11 +40,11 @@ public enum InternetProtocol {
     }
 
     /**
-     * Parses a string to an {@link InternetProtocol}.
+     * Parses a string to an InternetProtocol.
      *
      * @param serialized
      *            the protocol, e.g. <code>tcp</code> or <code>TCP</code>
-     * @return an {@link InternetProtocol} described by the string
+     * @return an InternetProtocol described by the string
      * @throws IllegalArgumentException
      *             if the argument cannot be parsed
      */

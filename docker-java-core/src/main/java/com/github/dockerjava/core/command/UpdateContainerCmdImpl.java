@@ -17,7 +17,7 @@ import javax.annotation.Nonnull;
  * @author Kanstantsin Shautsou
  * @see <a href="https://docs.docker.com/engine/reference/api/docker_remote_api_v1.22/">
  * https://docs.docker.com/engine/reference/api/docker_remote_api_v1.22/</a>
- * @since {@link RemoteApiVersion#VERSION_1_22}
+ * @since RemoteApiVersion#VERSION_1_22
  */
 public class UpdateContainerCmdImpl extends AbstrDockerCmd<UpdateContainerCmd, UpdateContainerResponse>
         implements UpdateContainerCmd {

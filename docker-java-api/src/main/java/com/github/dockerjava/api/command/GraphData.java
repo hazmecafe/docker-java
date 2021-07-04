@@ -8,7 +8,7 @@ import lombok.ToString;
 import javax.annotation.CheckForNull;
 
 /**
- * part of {@link GraphDriver}
+ * part of GraphDriver
  * @author Kanstantsin Shautsou
  */
 @EqualsAndHashCode

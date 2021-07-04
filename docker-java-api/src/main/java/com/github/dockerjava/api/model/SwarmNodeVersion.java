@@ -10,7 +10,7 @@ import java.io.Serializable;
 
 
 /**
- * @since {@link RemoteApiVersion#VERSION_1_24}
+ * @since RemoteApiVersion#VERSION_1_24
  */
 @EqualsAndHashCode
 @ToString

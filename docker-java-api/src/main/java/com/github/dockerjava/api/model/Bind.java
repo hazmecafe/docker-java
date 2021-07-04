@@ -6,7 +6,7 @@ import lombok.ToString;
 import java.io.Serializable;
 
 /**
- * Represents a host path being bind mounted as a {@link Volume} in a Docker container.
+ * Represents a host path being bind mounted as a Volume in a Docker container.
  * The Bind can be in read only or read write access mode.
  */
 @EqualsAndHashCode
@@ -21,17 +21,17 @@ public class Bind extends DockerObject implements Serializable {
     private AccessMode accessMode;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_23}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_23
      */
     private Boolean noCopy;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_17}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_17
      */
     private SELContext secMode;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22
      */
     private PropagationMode propagationMode;
 
@@ -89,11 +89,11 @@ public class Bind extends DockerObject implements Serializable {
     }
 
     /**
-     * Parses a bind mount specification to a {@link Bind}.
+     * Parses a bind mount specification to a Bind.
      *
      * @param serialized
      *            the specification, e.g. <code>/host:/container:ro</code>
-     * @return a {@link Bind} matching the specification
+     * @return a Bind matching the specification
      * @throws IllegalArgumentException
      *             if the specification cannot be parsed
      */
@@ -139,11 +139,11 @@ public class Bind extends DockerObject implements Serializable {
     }
 
     /**
-     * Returns a string representation of this {@link Bind} suitable for inclusion in a JSON message.
+     * Returns a string representation of this Bind suitable for inclusion in a JSON message.
      * The format is <code>&lt;host path&gt;:&lt;container path&gt;:&lt;access mode&gt;</code>,
-     * like the argument in {@link #parse(String)}.
+     * like the argument in #parse(String).
      *
-     * @return a string representation of this {@link Bind}
+     * @return a string representation of this Bind
      */
     @Override
     public String toString() {

@@ -20,7 +20,7 @@ public enum PropagationMode {
     PRIVATE("private");
 
     /**
-     * The default {@link PropagationMode}: {@link #DEFAULT}
+     * The default PropagationMode: #DEFAULT
      */
     public static final PropagationMode DEFAULT_MODE = DEFAULT;
 

@@ -42,31 +42,31 @@ public class Version extends DockerObject implements Serializable {
     private String version;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_22
      */
     @JsonProperty("BuildTime")
     private String buildTime;
 
     /**
-     * @since ~{@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20}
+     * @since ~com.github.dockerjava.core.RemoteApiVersion#VERSION_1_20
      */
     @JsonProperty("Experimental")
     private Boolean experimental;
 
     /**
-     * @since ~{@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_25}
+     * @since ~com.github.dockerjava.core.RemoteApiVersion#VERSION_1_25
      */
     @JsonProperty("MinAPIVersion")
     private String minAPIVersion;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_35}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_35
      */
     @JsonProperty("Platform")
     private VersionPlatform platform;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_35}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_35
      */
     @JsonProperty("Components")
     private List<VersionComponent> components;

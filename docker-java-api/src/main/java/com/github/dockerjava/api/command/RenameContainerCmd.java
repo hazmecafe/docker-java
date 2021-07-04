@@ -8,7 +8,7 @@ import javax.annotation.Nonnull;
 /**
  * Rename a container.
  *
- * @since {@link RemoteApiVersion#VERSION_1_17}
+ * @since RemoteApiVersion#VERSION_1_17
  */
 public interface RenameContainerCmd extends SyncDockerCmd<Void> {
 

@@ -8,22 +8,22 @@ import lombok.ToString;
 import javax.annotation.CheckForNull;
 
 /**
- * Part of {@link InspectImageResponse} and {@link InspectContainerResponse}
+ * Part of InspectImageResponse and InspectContainerResponse
  *
  * @author Kanstantsin Shautsou
- * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21}
+ * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21
  */
 @EqualsAndHashCode
 @ToString
 public class GraphDriver extends DockerObject {
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21
      */
     @JsonProperty("Name")
     private String name;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_21
      */
     @JsonProperty("Data")
     private GraphData data;

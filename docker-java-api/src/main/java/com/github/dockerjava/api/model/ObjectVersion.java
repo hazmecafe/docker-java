@@ -6,7 +6,7 @@ import lombok.EqualsAndHashCode;
 import java.io.Serializable;
 
 /**
- * @since {@link RemoteApiVersion#VERSION_1_24}
+ * @since RemoteApiVersion#VERSION_1_24
  * The version number of the object such as node, service, etc. This is needed to avoid conflicting writes.
  * The client must send the version number along with the modified specification when updating these objects.
  * This approach ensures safe concurrency and determinism in that the change on the object may not be applied

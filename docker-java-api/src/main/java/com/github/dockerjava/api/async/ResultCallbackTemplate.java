@@ -12,7 +12,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Abstract template implementation of {@link ResultCallback}
+ * Abstract template implementation of ResultCallback
  *
  * @author Marcus Linke
  *
@@ -83,7 +83,7 @@ public abstract class ResultCallbackTemplate<RC_T extends ResultCallback<A_RES_T
     }
 
     /**
-     * Blocks until {@link ResultCallback#onComplete()} was called
+     * Blocks until ResultCallback#onComplete() was called
      */
     @SuppressWarnings("unchecked")
     public RC_T awaitCompletion() throws InterruptedException {
@@ -102,9 +102,9 @@ public abstract class ResultCallbackTemplate<RC_T extends ResultCallback<A_RES_T
     }
 
     /**
-     * Blocks until {@link ResultCallback#onComplete()} was called or the given timeout occurs
+     * Blocks until ResultCallback#onComplete() was called or the given timeout occurs
      * @return {@code true} if completed and {@code false} if the waiting time elapsed
-     *         before {@link ResultCallback#onComplete()} was called.
+     *         before ResultCallback#onComplete() was called.
      */
     public boolean awaitCompletion(long timeout, TimeUnit timeUnit) throws InterruptedException {
         try {
@@ -121,8 +121,8 @@ public abstract class ResultCallbackTemplate<RC_T extends ResultCallback<A_RES_T
     }
 
     /**
-     * Blocks until {@link ResultCallback#onStart(Closeable)} was called.
-     * {@link ResultCallback#onStart(Closeable)} is called when the request was processed on the server
+     * Blocks until ResultCallback#onStart(Closeable) was called.
+     * ResultCallback#onStart(Closeable) is called when the request was processed on the server
      * side and the response is incoming.
      */
     @SuppressWarnings("unchecked")
@@ -132,11 +132,11 @@ public abstract class ResultCallbackTemplate<RC_T extends ResultCallback<A_RES_T
     }
 
     /**
-     * Blocks until {@link ResultCallback#onStart(Closeable)} was called or the given timeout occurs.
-     * {@link ResultCallback#onStart(Closeable)} is called when the request was processed on the server side
+     * Blocks until ResultCallback#onStart(Closeable) was called or the given timeout occurs.
+     * ResultCallback#onStart(Closeable) is called when the request was processed on the server side
      * and the response is incoming.
      * @return {@code true} if started and {@code false} if the waiting time elapsed
-     *         before {@link ResultCallback#onStart(Closeable)} was called.
+     *         before ResultCallback#onStart(Closeable) was called.
      */
     public boolean awaitStarted(long timeout, TimeUnit timeUnit) throws InterruptedException {
         return started.await(timeout, timeUnit);

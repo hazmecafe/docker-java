@@ -6,10 +6,10 @@ package com.github.dockerjava.core.async;
 import com.github.dockerjava.api.async.ResultCallback;
 
 /**
- * Abstract template implementation of {@link ResultCallback}
+ * Abstract template implementation of ResultCallback
  *
  * @author Marcus Linke
- * @deprecated use {@link com.github.dockerjava.api.async.ResultCallbackTemplate}
+ * @deprecated use com.github.dockerjava.api.async.ResultCallbackTemplate
  *
  */
 @Deprecated

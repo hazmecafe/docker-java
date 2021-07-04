@@ -13,10 +13,10 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * A container for port bindings, made available as a {@link Map} via its {@link #getBindings()} method.
+ * A container for port bindings, made available as a Map via its #getBindings() method.
  * <p>
  * <i>Note: This is an abstraction used for querying existing port bindings from a container configuration. It is not to be confused with
- * the {@link PortBinding} abstraction used for adding new port bindings to a container.</i>
+ * the PortBinding abstraction used for adding new port bindings to a container.</i>
  *
  * @see HostConfig#getPortBindings()
  * @see NetworkSettings#getPorts()
@@ -27,15 +27,15 @@ public class Ports implements Serializable {
     private final Map<ExposedPort, Binding[]> ports = new HashMap<>();
 
     /**
-     * Creates a {@link Ports} object with no {@link PortBinding}s. Use {@link #bind(ExposedPort, Binding)} or {@link #add(PortBinding...)}
-     * to add {@link PortBinding}s.
+     * Creates a Ports object with no PortBindings. Use #bind(ExposedPort, Binding) or #add(PortBinding...)
+     * to add PortBindings.
      */
     public Ports() {
     }
 
     /**
-     * Creates a {@link Ports} object with an initial {@link PortBinding} for the specified {@link ExposedPort} and {@link Binding}. Use
-     * {@link #bind(ExposedPort, Binding)} or {@link #add(PortBinding...)} to add more {@link PortBinding}s.
+     * Creates a Ports object with an initial PortBinding for the specified ExposedPort and Binding. Use
+     * #bind(ExposedPort, Binding) or #add(PortBinding...) to add more PortBindings.
      */
     public Ports(ExposedPort exposedPort, Binding host) {
         bind(exposedPort, host);
@@ -46,7 +46,7 @@ public class Ports implements Serializable {
     }
 
     /**
-     * Adds a new {@link PortBinding} for the specified {@link ExposedPort} and {@link Binding} to the current bindings.
+     * Adds a new PortBinding for the specified ExposedPort and Binding to the current bindings.
      */
     public void bind(ExposedPort exposedPort, Binding binding) {
         if (ports.containsKey(exposedPort)) {
@@ -65,7 +65,7 @@ public class Ports implements Serializable {
     }
 
     /**
-     * Adds the specified {@link PortBinding}(s) to the list of {@link PortBinding}s.
+     * Adds the specified PortBinding(s) to the list of PortBindings.
      */
     public void add(PortBinding... portBindings) {
         for (PortBinding binding : portBindings) {
@@ -79,9 +79,9 @@ public class Ports implements Serializable {
     }
 
     /**
-     * Returns the port bindings in the format used by the Docker remote API, i.e. the {@link Binding}s grouped by {@link ExposedPort}.
+     * Returns the port bindings in the format used by the Docker remote API, i.e. the Bindings grouped by ExposedPort.
      *
-     * @return the port bindings as a {@link Map} that contains one or more {@link Binding}s per {@link ExposedPort}.
+     * @return the port bindings as a Map that contains one or more Bindings per ExposedPort.
      */
     public Map<ExposedPort, Binding[]> getBindings() {
         return ports;
@@ -98,8 +98,8 @@ public class Ports implements Serializable {
     // }
 
     /**
-     * A {@link Binding} represents a socket on the Docker host that is used in a {@link PortBinding}. It is characterized by an
-     * {@link #getHostIp() IP address} and a {@link #getHostPortSpec() port spec}. Both properties may be <code>null</code> in order to
+     * A Binding represents a socket on the Docker host that is used in a PortBinding. It is characterized by an
+     * #getHostIp() IP address and a #getHostPortSpec() port spec. Both properties may be <code>null</code> in order to
      * let Docker assign them dynamically/using defaults.
      *
      * @see Ports#bind(ExposedPort, Binding)
@@ -110,7 +110,7 @@ public class Ports implements Serializable {
         private static final long serialVersionUID = 1L;
 
         /**
-         * Creates a {@link Binding} for the given {@link #getHostPortSpec() port spec}, leaving the {@link #getHostIp() IP address}
+         * Creates a Binding for the given #getHostPortSpec() port spec, leaving the #getHostIp() IP address
          * undefined.
          *
          * @see Ports#bind(ExposedPort, Binding)
@@ -121,7 +121,7 @@ public class Ports implements Serializable {
         }
 
         /**
-         * Creates a {@link Binding} for the given {@link #getHostIp() IP address}, leaving the {@link #getHostPortSpec() port spec}
+         * Creates a Binding for the given #getHostIp() IP address, leaving the #getHostPortSpec() port spec
          * undefined.
          */
         public static Binding bindIp(String hostIp) {
@@ -129,21 +129,21 @@ public class Ports implements Serializable {
         }
 
         /**
-         * Creates a {@link Binding} for the given {@link #getHostIp() IP address} and port number.
+         * Creates a Binding for the given #getHostIp() IP address and port number.
          */
         public static Binding bindIpAndPort(String hostIp, int port) {
             return new Binding(hostIp, "" + port);
         }
 
         /**
-         * Creates a {@link Binding} for the given {@link #getHostIp() IP address} and port range.
+         * Creates a Binding for the given #getHostIp() IP address and port range.
          */
         public static Binding bindIpAndPortRange(String hostIp, int lowPort, int highPort) {
             return new Binding(hostIp, lowPort + "-" + highPort);
         }
 
         /**
-         * Creates a {@link Binding} for the given port range, leaving the {@link #getHostIp() IP address}
+         * Creates a Binding for the given port range, leaving the #getHostIp() IP address
          * undefined.
          */
         public static Binding bindPortRange(int lowPort, int highPort) {
@@ -151,7 +151,7 @@ public class Ports implements Serializable {
         }
 
         /**
-         * Creates a {@link Binding} for the given port leaving the {@link #getHostIp() IP address}
+         * Creates a Binding for the given port leaving the #getHostIp() IP address
          * undefined.
          */
         public static Binding bindPort(int port) {
@@ -159,7 +159,7 @@ public class Ports implements Serializable {
         }
 
         /**
-         * Creates an empty {@link Binding}.
+         * Creates an empty Binding.
          */
         public static Binding empty() {
             return new Binding(null, null);
@@ -170,7 +170,7 @@ public class Ports implements Serializable {
         private final String hostPortSpec;
 
         /**
-         * Creates a {@link Binding} for the given {@link #getHostIp() host IP address} and {@link #getHostPortSpec() host port spec}.
+         * Creates a Binding for the given #getHostIp() host IP address and #getHostPortSpec() host port spec.
          *
          * @see Ports#bind(ExposedPort, Binding)
          * @see ExposedPort
@@ -197,13 +197,13 @@ public class Ports implements Serializable {
         }
 
         /**
-         * Parses a textual host and port specification (as used by the Docker CLI) to a {@link Binding}.
+         * Parses a textual host and port specification (as used by the Docker CLI) to a Binding.
          * <p>
          * Legal syntax: <code>IP|IP:portSpec|portSpec</code> where <code>portSpec</code> is either a single port or a port range
          *
          * @param serialized
          *            serialized the specification, e.g. <code>127.0.0.1:80</code>
-         * @return a {@link Binding} matching the specification
+         * @return a Binding matching the specification
          * @throws IllegalArgumentException
          *             if the specification cannot be parsed
          */
@@ -231,10 +231,10 @@ public class Ports implements Serializable {
         }
 
         /**
-         * Returns a string representation of this {@link Binding} suitable for inclusion in a JSON message. The format is
-         * <code>[IP:]Port</code>, like the argument in {@link #parse(String)}.
+         * Returns a string representation of this Binding suitable for inclusion in a JSON message. The format is
+         * <code>[IP:]Port</code>, like the argument in #parse(String).
          *
-         * @return a string representation of this {@link Binding}
+         * @return a string representation of this Binding
          */
         @Override
         public String toString() {

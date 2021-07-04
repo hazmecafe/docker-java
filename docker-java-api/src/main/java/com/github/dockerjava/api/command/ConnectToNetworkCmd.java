@@ -8,7 +8,7 @@ import javax.annotation.Nonnull;
 /**
  * Connects a container to a network.
  *
- * @since {@link RemoteApiVersion#VERSION_1_21}
+ * @since RemoteApiVersion#VERSION_1_21
  */
 public interface ConnectToNetworkCmd extends SyncDockerCmd<Void> {
 

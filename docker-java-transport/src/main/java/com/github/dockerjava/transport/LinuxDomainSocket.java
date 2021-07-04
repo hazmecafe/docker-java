@@ -27,7 +27,7 @@ import com.sun.jna.Platform;
 import com.sun.jna.Structure;
 
 /**
- * {@link DomainSocket} implementation for Linux based platforms.
+ * DomainSocket implementation for Linux based platforms.
  *
  * @author Phillip Webb
  */

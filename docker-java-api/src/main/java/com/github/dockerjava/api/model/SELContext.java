@@ -18,7 +18,7 @@ public enum SELContext {
     single("Z");
 
     /**
-     * The default {@link SELContext}: {@link #none}
+     * The default SELContext: #none
      */
     public static final SELContext DEFAULT = none;
 

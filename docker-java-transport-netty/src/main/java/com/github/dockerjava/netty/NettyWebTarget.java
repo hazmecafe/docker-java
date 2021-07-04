@@ -23,7 +23,7 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 
 /**
- * This class is basically a replacement of {@link javax.ws.rs.client.WebTarget} to allow simpler migration of JAX-RS code to a netty based
+ * This class is basically a replacement of javax.ws.rs.client.WebTarget to allow simpler migration of JAX-RS code to a netty based
  * implementation.
  *
  * @author Marcus Linke

@@ -32,7 +32,7 @@ public class ExecCreateCmdImpl extends AbstrDockerCmd<ExecCreateCmd, ExecCreateC
     private Boolean privileged;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_19}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_19
      */
     @JsonProperty("User")
     private String user;
@@ -41,13 +41,13 @@ public class ExecCreateCmdImpl extends AbstrDockerCmd<ExecCreateCmd, ExecCreateC
     private String[] cmd;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_25}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_25
      */
     @JsonProperty("Env")
     private List<String> env;
 
     /**
-     * @since {@link com.github.dockerjava.core.RemoteApiVersion#VERSION_1_35}
+     * @since com.github.dockerjava.core.RemoteApiVersion#VERSION_1_35
      */
     @JsonProperty("WorkingDir")
     private String workingDir;
